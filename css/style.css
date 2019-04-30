@@ -355,7 +355,7 @@ body .theme-button:hover span {opacity: 1;}
   line-height: 37px;
   padding: 35px 0 50px;
 }
-.theme-banner-one .main-text-wrapper .button-group>li:first-child a {
+.theme-banner-one .main-text-wrapper .button-group>li a {
   width: 140px;
   line-height: 55px;
   color: #fff;
