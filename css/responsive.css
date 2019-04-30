@@ -45,6 +45,19 @@
 }
 /*(min-width: 992px) and (max-width: 1199px)*/
 
+@media (max-width: 767px) {
+  #polyglotLanguageSwitcher {margin-right: -10px;}
+}
+
+@media (min-width: 992px) {
+  #polyglotLanguageSwitcher {margin-top: 10px;}
+}
+
+
+@media (max-width: 470px) {
+  #polyglotLanguageSwitcher {margin-right: -55px;}
+}
+
 @media (max-width: 991px) {
   .theme-main-menu #mega-menu-holder.dark-bg .navbar-nav {background:#1d1d21; }
   #mega-menu-holder.dark-bg ul> li> a {border-bottom: 1px solid rgba(255,255,255,0.08);}
@@ -54,7 +67,6 @@
   .theme-main-menu.full-width .navbar>div {width: 100%;}
   .theme-main-menu.fixed.full-width {padding: 10px 15px;}
   .theme-main-menu .right-widget .login-button {display: none;}
-  #polyglotLanguageSwitcher {margin: 10px 0 0;}
   .theme-main-menu .logo {
     float: none;
     position: absolute;

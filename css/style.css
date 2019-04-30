@@ -313,7 +313,7 @@ body .theme-button:hover span {opacity: 1;}
 }
 .theme-main-menu .right-widget .login-button a i {font-size: 18px;margin-left: 8px;vertical-align: middle;}
 .theme-main-menu .right-widget .login-button a:hover,.theme-main-menu .right-widget .login-button a:hover i {color: #fff;}
-#polyglotLanguageSwitcher {margin: 10px 20px 0 90px;}
+#polyglotLanguageSwitcher {margin: 5px 20px 5px 90px;}
 #polyglotLanguageSwitcher span.trigger:before {
   content: '';
   font-family: 'font-awesome';
@@ -343,11 +343,6 @@ body .theme-button:hover span {opacity: 1;}
   animation: menu_sticky 0.7s ease-in-out;
 }
 
-@media only screen and (max-width: 991px) {
-  .theme-main-menu.fixed {
-    padding:10px 0 43px 0;
-  }
-}
 .theme-main-menu.fixed.full-width {padding: 10px 80px;}
 /*----------------------- Theme Banner One -------------------------*/
 .theme-banner-one {

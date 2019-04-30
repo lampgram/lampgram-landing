@@ -78,13 +78,16 @@
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+
 #polyglotLanguageSwitcher ul.dropdown li a {
 	font-size: 14px;
 	width:100%;
 }
+
 #polyglotLanguageSwitcher ul.dropdown li:first-child {
 	border:none;
 }
+
 #polyglotLanguageSwitcher ul.dropdown li:last-child { 
 	border-radius: 0 0 3px 3px;
 }
