@@ -349,6 +349,17 @@ body .theme-button:hover span {opacity: 1;}
   background: url(../images/home/bg1.png) no-repeat center;
   background-size: cover;
 }
+.msg-error {
+  color: #c65848;
+}
+#captcha_place {
+  margin-left:15px;
+}
+#captcha_place.error {
+  border: solid 2px #c64848;
+  padding: .2em;
+  width: 17.5em;
+}
 .theme-banner-one .main-text-wrapper {padding: 318px 0 180px;}
 .theme-banner-one .main-text-wrapper p {
   font-size: 22px;
