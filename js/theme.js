@@ -214,59 +214,59 @@
               content: '<p>Development <br> Started</p>'
             },
             {
-              date: 'March 14, 2019',
+              date: 'October 14, 2019',
               content: '<p>Pre-ICO Opens</p>'
             },
             {
-              date: 'May 24, 2019',
+              date: 'October 24, 2019',
               content: '<p>Private Token <br> Round</p>'
             },
             {
-              date: 'Jun 14, 2019',
+              date: 'November 14, 2019',
               content: '<p>Pre-ICO <br> Closed</p>'
             },
             {
-                date: 'March 24, 2019',
+                date: 'December 24, 2019',
                 content: '<p>Decentralized <br> Platform Launch</p>'
             },
             {
-                date: 'Jul 15, 2019',
+                date: 'January 15, 2020',
                 content: '<p>App Integration <br> Process</p>'
             },
             {
-                date: 'Q4 - 2020',
+                date: 'Q2 - 2020',
                 content: '<p>Future significant expand stage</p>'
             },
             {
-                date: 'Q1 - 2021',
+                date: 'Q3 - 2020',
                 content: '<p>Future significant expand stage 2</p>'
             },
             {
-                date: 'Q2 - 2021',
+                date: 'Q4 - 2020',
                 content: '<p>Future significant expand stage 3</p>'
             },
             {
-                date: 'Q3 - 2020',
+                date: 'Q1 - 2021',
                 content: '<p>Future significant expand stage 4</p>'
             },
             {
-                date: 'Q4 - 2020',
+                date: 'Q2 - 2021',
                 content: '<p>Future significant expand stage 5</p>'
             },
             {
-              date: 'Q1 - 2021',
+              date: 'Q3 - 2021',
               content: '<p>Future significant expand stage 6</p>'
             },
             {
-              date: 'Q2 - 2021',
+              date: 'Q4 - 2021',
               content: '<p>Future significant expand stage 7</p>'
             },
             {
-              date: 'Q3 - 2021',
+              date: 'Q1 - 2022',
               content: '<p>Future significant expand stage 8</p>'
             },
             {
-              date: 'Q4 - 2021',
+              date: 'Q2 - 2022',
               content: '<p>Future significant expand stage 9</p>'
             }
           ];
