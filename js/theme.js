@@ -223,7 +223,7 @@
             },
             {
               date: 'November 14, 2019',
-              content: '<p>Pre-ICO <br> Closed</p>'
+              content: '<p>Pre-ICO <br> Closes</p>'
             },
             {
                 date: 'December 24, 2019',
