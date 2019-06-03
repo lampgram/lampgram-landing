@@ -147,7 +147,7 @@
     getLanguage();
     $(`#${localStorage.getItem('language')}`).attr("selected", true);
 
-    fetch('https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
+    fetch('https://stormy-escarpment-21788.herokuapp.com/https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
       .then(data => (data.json()))
       .then(res => {
         $('.ex-rate').html(`${res.priceChangePercent}%`);
@@ -161,7 +161,7 @@
         //   $('#color-ex-icon').addClass('flaticon-down-caret');
         // }
 
-        fetch('https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*' })
+        fetch('https://stormy-escarpment-21788.herokuapp.com/https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*' })
           .then(data => (data.json()))
           .then(respon => {
             let btcRate = respon.weightedAvgPrice;
