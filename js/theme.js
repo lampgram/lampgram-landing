@@ -147,6 +147,33 @@
     getLanguage();
     $(`#${localStorage.getItem('language')}`).attr("selected", true);
 
+    fetch('https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
+      .then(data => (data.json()))
+      .then(res => {
+        $('.ex-rate').html(`${res.priceChangePercent}%`);
+
+        // if (res.priceChangePercent >= 0) {
+        //   $('#ex-icon').addClass('range-up');
+        //   $('#color-ex-icon').addClass('flaticon-up-caret');
+        // }
+        // else {
+        //   $('#ex-icon').addClass('range-down');
+        //   $('#color-ex-icon').addClass('flaticon-down-caret');
+        // }
+
+        fetch('https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*' })
+          .then(data => (data.json()))
+          .then(respon => {
+            let btcRate = respon.weightedAvgPrice;
+            $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
+            $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
+          })
+      });
+
+
+
+
+
     // -------------------- Navigation Scroll
     $(window).on('scroll', function () {
       var sticky = $('.theme-main-menu'),
