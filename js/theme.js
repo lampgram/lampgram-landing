@@ -14,8 +14,9 @@
   function getLanguage() {
     let lang = localStorage.getItem('language');
     if (lang == 'ru') {
-      $('a.nav-link').css('font-size', '14.0px');
-      $('a.nav-link').css('margin-top', '5px');
+      $('a.nav-link').css('font-size', '17.5px');
+      // $('a.nav-link').css('margin-top', '3px');
+      $('a.nav-link').css('margin', '3px 8px 0px 8px');
       $('h1').css('font-family', 'Arial');
       $('h1').css('font-size', '40.5px');
       $('h2').css('font-size', '37.5px');
@@ -24,7 +25,6 @@
     else {
       $('h1').css('font-family', 'brandon_grotesquebold');
       $('a.nav-link').css('font-size', '20px');
-      $('a.nav-link').css('margin-top', 'initial');
     }
 
     (lang == null) ? setLanguage('en') : false;
@@ -44,7 +44,7 @@
     $('#f-p').html(language.f_p);
     $('#store-link').html(language.store_l);
     $('#toggle-dropdown').html(language.toggle_dropdown);
-    $('#d-osx').html(language.d_osx);
+    $('#d-osx').html(language.d_osx)
     $('#d-ios').html(language.d_ios);
     $('#d-android').html(language.d_android);
     $('#d-win').html(language.d_win);
