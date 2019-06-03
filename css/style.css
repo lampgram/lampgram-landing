@@ -143,7 +143,7 @@
   font-family: 'brandon_grotesquemedium';
   font-family: 'brandon_grotesque_regularRg';
   font-family: 'loveloline_light';    */
-  font-family: 'proxima_novaregular';
+  font-family: 'proxima_novaregular', 'Charcoal', 'Geneva', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: normal;
   color:rgba(48,61,83,0.7);
   font-size: 18px;
@@ -1167,7 +1167,7 @@ body .theme-button:hover span {opacity: 1;}
   display: block;
   margin: 12px 0 15px;
 }
-.theme-footer .top-footer-data-wrapper .footer-logo .mobile {font-size: 20px;color: #b6b5b5;}
+.theme-footer .top-footer-data-wrapper .footer-logo .mobile {font-size: 18.8px;color: #b6b5b5;}
 .theme-footer .top-footer-data-wrapper .footer-list .title {
   font-size: 24px;
   padding-bottom: 28px;
