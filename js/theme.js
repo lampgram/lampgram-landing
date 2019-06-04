@@ -151,15 +151,15 @@
       .then(data => (data.json()))
       .then(res => {
         $('.ex-rate').html(`${res.priceChangePercent}%`);
-
-        // if (res.priceChangePercent >= 0) {
-        //   $('#ex-icon').addClass('range-up');
-        //   $('#color-ex-icon').addClass('flaticon-up-caret');
-        // }
-        // else {
-        //   $('#ex-icon').addClass('range-down');
-        //   $('#color-ex-icon').addClass('flaticon-down-caret');
-        // }
+        
+        if (res.priceChangePercent >= 0) {
+          $('.ex-icon').addClass('range-up');
+          $('.arrow-ex-icon').addClass('flaticon-up-caret');
+        }
+        else {
+          $('.ex-icon').addClass('range-down');
+          $('.arrow-ex-icon').addClass('flaticon-down-caret');
+        }
 
         fetch('https://stormy-escarpment-21788.herokuapp.com/https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*' })
           .then(data => (data.json()))
@@ -167,6 +167,7 @@
             let btcRate = respon.weightedAvgPrice;
             $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
             $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
+            $('.amount-g').html(`$${(res.weightedAvgPrice*btcRate*2723360000).toPrecision(9)}`);
           })
       });
 
