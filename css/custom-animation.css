@@ -33,22 +33,22 @@
 }
 @-webkit-keyframes border-one {
   0%   {border: 5px solid #ff8b90; border-right: none;border-top: none;}
-  50%  {border: 5px solid #01daba; border-right: none;border-top: none;}
+  50%  {border: 5px solid black; border-right: none;border-top: none;}
   100% {border: 5px solid #b377f6; border-right: none;border-top: none;}
 }
 @keyframes border-one {
   0%   {border: 5px solid #ff8b90; border-right: none;border-top: none;}
-  50%  {border: 5px solid #01daba; border-right: none;border-top: none;}
+  50%  {border: 5px solid black; border-right: none;border-top: none;}
   100% {border: 5px solid #b377f6; border-right: none;border-top: none;}
 }
 
 @-webkit-keyframes border-two {
   0%   {border: 5px solid #b377f6; border-right: none;border-bottom: none;}
   50%  {border: 5px solid #fec25e; border-right: none;border-bottom: none;}
-  100% {border: 5px solid #01daba; border-right: none;border-bottom: none;}
+  100% {border: 5px solid black; border-right: none;border-bottom: none;}
 }
 @keyframes border-two {
   0%   {border: 5px solid #b377f6; border-right: none;border-bottom: none;}
   50%  {border: 5px solid #fec25e; border-right: none;border-bottom: none;}
-  100% {border: 5px solid #01daba; border-right: none;border-bottom: none;}
+  100% {border: 5px solid black; border-right: none;border-bottom: none;}
 }

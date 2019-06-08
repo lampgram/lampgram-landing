@@ -370,14 +370,14 @@ body .theme-button:hover span {opacity: 1;}
   width: 140px;
   line-height: 55px;
   color: #fff;
-  background:#01daba;
+  background:black;
   font-size: 18px;
   border-radius: 3px;
   text-align: center;
 }
 
 .theme-banner-one .main-text-wrapper .button-group>li:first-child a:hover {
-  background:black;
+  background:rgb(36, 34, 34);
 }
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .download-button,
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .dropdown-menu a {
@@ -1102,7 +1102,7 @@ body .theme-button:hover span {opacity: 1;}
   color: #fff;
   font-size: 20px;
 }
-.contact-us-one form button:hover {background: #fec25e;}
+.contact-us-one form button:hover {background: #252525;}
 .contact-us-one.bg-color {
   position: relative;
   background: linear-gradient( 29deg, rgb(74,2,199) 0%, rgb(117,1,209) 100%);
@@ -1668,7 +1668,7 @@ body .theme-button:hover span {opacity: 1;}
   color: #323232;
   font-size: 20px;
 }
-.contact-section-dark form button:hover {background: #00c9d6; color: #fff;}
+.contact-section-dark form button:hover {background: #323333; color: #fff;}
 /*======================= Form Validation ===================*/
 .alert-wrapper {
   display: none;
@@ -2085,4 +2085,4 @@ body .theme-button:hover span {opacity: 1;}
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
-.blog-details .comment-area .leave-comment form button:hover {background: #fec25e;}
+.blog-details .comment-area .leave-comment form button:hover {background: #272626;}
