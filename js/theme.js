@@ -458,23 +458,6 @@
       });
     });
 
-    // -------------------- From Bottom to Top Button
-    //Check to see if the window is top if not then display button
-    $(window).on('scroll', function () {
-      if ($(this).scrollTop() > 200) {
-        $('.scroll-top').fadeIn();
-      } else {
-        $('.scroll-top').fadeOut();
-      }
-    });
-    //Click event to scroll to top
-    $('.scroll-top').on('click', function () {
-      $('html, body').animate({ scrollTop: 0 }, 1500);
-      return false;
-    });
-
-
-
 
     // ----------------------------- Counter Function
     var timer = $('.timer');
