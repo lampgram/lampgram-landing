@@ -376,6 +376,37 @@ body .theme-button:hover span {opacity: 1;}
   text-align: center;
 }
 
+.super-small-text {
+  margin-top:-8px;
+  font-size: 13px;
+}
+
+.darken-font {
+  color: black;
+}
+
+ul li ul.dropdown-list {
+  background: white;
+  border-radius: 5px;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  display: none;
+}
+
+ul li:active > ul.dropdown-list,
+ul li:focus-within > ul.dropdown-list,
+ul li ul.dropdown-list:active,
+ul li ul.dropdown-list:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+
+
 .theme-banner-one .main-text-wrapper .button-group>li:first-child a:hover {
   background:rgb(36, 34, 34);
 }
