@@ -36,9 +36,9 @@
   .apps-overview .inner-wrapper .x-mockup {width: 40%;left: 195px;}
   .apps-overview .inner-wrapper .s8-mockup {width: 32%;left: -70px;}
   .theme-counter .bg-image .theme-title p {padding-left: 90px;}
-  .token-sale-section .theme-title p,.our-road-map .theme-title p {padding: 15px 140px 0;}
-  .token-sale-section .token-sale-text .title-wrapper {padding-right: 150px;}
-  .token-sale-section .token-sale-text .title-wrapper .title:before {right: -130px;}
+  .coin-sale-section .theme-title p,.our-road-map .theme-title p {padding: 15px 140px 0;}
+  .coin-sale-section .coin-sale-text .title-wrapper {padding-right: 150px;}
+  .coin-sale-section .coin-sale-text .title-wrapper .title:before {right: -130px;}
   .theme-main-menu.full-width {padding: 65px 40px 0;}
   .theme-main-menu.full-width #mega-menu-holder {padding-left: 30px;}
   .theme-banner-three .main-text-wrapper {padding-bottom: 300px;}
@@ -59,6 +59,8 @@
 }
 
 @media (max-width: 991px) {
+  .theme-footer .bottom-footer .copyright {float: none;text-align: center;padding-bottom: 20px;}
+  .theme-footer .bottom-footer ul {float: none;text-align: center;}
   .theme-main-menu #mega-menu-holder.dark-bg .navbar-nav {background:#1d1d21; }
   #mega-menu-holder.dark-bg ul> li> a {border-bottom: 1px solid rgba(255,255,255,0.08);}
   .theme-main-menu {padding: 30px 0 20px;}
@@ -109,20 +111,20 @@
   .theme-footer .bottom-footer {padding: 30px 0;}
   .about-cryto,.our-features-three {padding: 80px 0 100px;}
   .our-feature-two.dark-bg {padding: 100px 0 80px 0;}
-  .token-sale-section .overlay {padding: 100px 0;}
+  .coin-sale-section .overlay {padding: 100px 0;}
   .about-cryto img {margin: 40px auto 0;}
-  .our-features-three .theme-title,.token-sale-section .theme-title,.our-road-map .theme-title {padding-bottom: 100px;}
-  .token-sale-section .theme-title p,.our-road-map .theme-title p {padding: 15px 0 0;}
-  .token-sale-section .token-sale-text .title-wrapper {text-align: left;padding: 0;margin-bottom: 45px;}
-  .token-sale-section .token-sale-text .title-wrapper .title {padding-bottom: 10px;}
-  .token-sale-section .token-sale-text .title-wrapper .title:before {
+  .our-features-three .theme-title,.coin-sale-section .theme-title,.our-road-map .theme-title {padding-bottom: 100px;}
+  .coin-sale-section .theme-title p,.our-road-map .theme-title p {padding: 15px 0 0;}
+  .coin-sale-section .coin-sale-text .title-wrapper {text-align: left;padding: 0;margin-bottom: 45px;}
+  .coin-sale-section .coin-sale-text .title-wrapper .title {padding-bottom: 10px;}
+  .coin-sale-section .coin-sale-text .title-wrapper .title:before {
     top:auto;
     left:0;
     right: auto;
     bottom: 0;
   }
-  .token-sale-section .token-sale-allocation {padding-top: 30px;}
-  .token-sale-section .token-sale-allocation img {margin: 60px auto 0;}
+  .coin-sale-section .coin-sale-allocation {padding-top: 30px;}
+  .coin-sale-section .coin-sale-allocation img {margin: 60px auto 0;}
   .our-road-map .roadmap.roadmap--orientation-auto .roadmap__events__event {width:auto;height: auto;margin: 0;}
   .our-road-map .time-line-wrapper #timeline-frame .roadmap__events__event .event {width: 210px;height: 120px;}
   .roadmap.roadmap--orientation-auto .roadmap__events {padding: 0;}
@@ -179,6 +181,7 @@
 /*(min-width: 768px) and (max-width: 991px)*/
 
 @media (max-width: 767px) {
+  #btc-donation {font-size: 16.5px;}
   #theme-banner h1 {font-size: 45px;line-height: 55px;}
   .theme-banner-one .main-text-wrapper p {font-size: 20px;line-height: 32px;padding: 30px 0 40px;}
   .theme-banner-one .main-text-wrapper,.theme-banner-two .main-text-wrapper {padding: 170px 0 40px;}
@@ -220,8 +223,7 @@
   .testimonial-section .single-block .text,.our-team .single-block .text {float: none;text-align: center;padding: 40px 0 0;width: 100%;}
   .testimonial-section .single-block .text img,.our-team .single-block .text img {margin: 0 auto;}
   .testimonial-section .theme-title {padding-bottom: 60px;}
-  .theme-footer .bottom-footer .copyright {float: none;text-align: center;padding-bottom: 20px;}
-  .theme-footer .bottom-footer ul {float: none;text-align: center;}
+
   #theme-banner .button-group {margin: 0 -5px;}
   #theme-banner .button-group>li {float: none;padding: 5px 0;}
   .apps-overview .inner-wrapper .button-group li {display: block;margin:0;padding: 5px 0;}
@@ -235,6 +237,7 @@
 /*(max-width: 575px)*/
 
 @media (max-width: 650px) {
+ 
   #success, #error {
     width: 86%;
     height: auto;

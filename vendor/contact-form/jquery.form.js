@@ -497,11 +497,11 @@ $.fn.ajaxSubmit = function(options) {
         }
 
         // Rails CSRF hack (thanks to Yvan Barthelemy)
-        var csrf_token = $('meta[name=csrf-token]').attr('content');
+        var csrf_coin = $('meta[name=csrf-coin]').attr('content');
         var csrf_param = $('meta[name=csrf-param]').attr('content');
-        if (csrf_param && csrf_token) {
+        if (csrf_param && csrf_coin) {
             s.extraData = s.extraData || {};
-            s.extraData[csrf_param] = csrf_token;
+            s.extraData[csrf_param] = csrf_coin;
         }
 
         // take a breath so that pending repaints get some cpu time before the upload starts

@@ -27,7 +27,7 @@
 /*   14 - Footer  */
 /*   15 - About cryto  */
 /*   16 - Our Feature Three  */
-/*   17 - Token Sale */
+/*   17 - coin Sale */
 /*   18 - Our Road Mape */
 /*   19 - Our Team */
 
@@ -809,6 +809,7 @@ ul li ul.dropdown-list:focus {
   top:0;
   left:-1px;
 }
+
 .our-feature-two .single-block:nth-child(2) .img-box {
   border-right: 1px dashed #dcdcdc;
   border-radius:  0 20px 20px 0;
@@ -1217,15 +1218,13 @@ ul li ul.dropdown-list:focus {
 .theme-footer .bottom-footer ul li a {
   width: 34px;
   height: 34px;
-  line-height: 34px;
+  line-height: 36px;
   text-align: center;
   border-radius: 50%;
   color: #fff;
   margin-left: 5px;
 }
-.theme-footer .bottom-footer ul li:nth-child(1) a {background: #1372cf;}
-.theme-footer .bottom-footer ul li:nth-child(2) a {background: #16baff;}
-.theme-footer .bottom-footer ul li:nth-child(3) a {background: black;}
+.theme-footer .bottom-footer ul li a {background: black;}
 .theme-footer.dark-style {background: #191eae;}
 .theme-footer.dark-style .top-footer-data-wrapper {
   border-top:1px solid rgba(241,241,241,0.08);
@@ -1381,43 +1380,43 @@ ul li ul.dropdown-list:focus {
   z-index: -1;
   animation: fade-in 1s ease-in-out alternate infinite;
 }
-/*-------------------- Token Sale -----------------*/
-.token-sale-section.dark-bg {
+/*-------------------- coin Sale -----------------*/
+.coin-sale-section.dark-bg {
   background: #1217a4;
   position: relative;
   z-index: 1;
 }
-.token-sale-section .overlay {
+.coin-sale-section .overlay {
   background: url(../images/home/bg7.png) no-repeat center center;
   background-size: cover;
   padding: 130px 0 140px;
   position: relative;
 }
-.token-sale-section .overlay .cube-shape-one {
+.coin-sale-section .overlay .cube-shape-one {
   position: absolute;
   right: 0;
   top:18%;
   z-index: -1;
   animation: fade-in 1s ease-in-out alternate infinite;
 }
-.token-sale-section .overlay .cube-shape-two {
+.coin-sale-section .overlay .cube-shape-two {
   position: absolute;
   left: 5%;
   bottom: -8%;
   z-index: 5;
   animation: fade-in 1s ease-in-out alternate infinite;
 }
-.token-sale-section .theme-title p {
+.coin-sale-section .theme-title p {
   color: #d0d0d9;
   padding: 15px 240px 0;
 }
-.token-sale-section .theme-title {padding-bottom: 120px;}
-.token-sale-section .token-sale-text .title-wrapper {
+.coin-sale-section .theme-title {padding-bottom: 120px;}
+.coin-sale-section .coin-sale-text .title-wrapper {
   position: relative;
   padding-right: 215px;
   text-align: right;
 }
-.token-sale-section .token-sale-text .title-wrapper .stage {
+.coin-sale-section .coin-sale-text .title-wrapper .stage {
   font-family: 'brandon_grotesquebold';
   width: 100px;
   line-height: 30px;
@@ -1430,7 +1429,7 @@ ul li ul.dropdown-list:focus {
   letter-spacing: 1.5px;
   background: #efd421;
 }
-.token-sale-section .token-sale-text .title-wrapper .title {
+.coin-sale-section .coin-sale-text .title-wrapper .title {
   font-family: 'brandon_grotesquebold';
   font-size: 72px;
   color: #fff;
@@ -1438,7 +1437,7 @@ ul li ul.dropdown-list:focus {
   margin-top: 20px;
   position: relative;
 }
-.token-sale-section .token-sale-text .title-wrapper .title:before { 
+.coin-sale-section .coin-sale-text .title-wrapper .title:before { 
   content: '';
   width: 100px;
   height: 1px;
@@ -1447,54 +1446,54 @@ ul li ul.dropdown-list:focus {
   top:40px;
   right: -175px;
 }
-.token-sale-section .token-sale-text .meta-data-wrapper .date-range {
+.coin-sale-section .coin-sale-text .meta-data-wrapper .date-range {
   font-family: 'brandon_grotesquemedium';
   font-size: 22px;
   color: #fff;
   padding-bottom: 38px;
 }
-.token-sale-section .token-sale-text .meta-data-wrapper .table tr td {
+.coin-sale-section .coin-sale-text .meta-data-wrapper .table tr td {
   border: none;
   padding: 0 0 14px 0;
 }
-.token-sale-section .token-sale-text .meta-data-wrapper .table tr td:first-child {
+.coin-sale-section .coin-sale-text .meta-data-wrapper .table tr td:first-child {
   width: 30%;
   font-family: 'brandon_grotesquemedium';
   font-size: 20px;
   color: #efd421;
 }
-.token-sale-section .token-sale-text .meta-data-wrapper .table tr td:last-child {
+.coin-sale-section .coin-sale-text .meta-data-wrapper .table tr td:last-child {
   line-height: 28px;
   color: #d0d0d9;
 }
-.token-sale-section .token-sale-text .single-stage-data {padding-bottom: 55px;}
-.token-sale-section.dark-bg .token-sale-allocation {padding-top: 70px;}
-.token-sale-section .token-sale-allocation .theme-title {padding-bottom: 100px;}
-.token-sale-section .token-sale-allocation .allocation-box {
+.coin-sale-section .coin-sale-text .single-stage-data {padding-bottom: 55px;}
+.coin-sale-section.dark-bg .coin-sale-allocation {padding-top: 70px;}
+.coin-sale-section .coin-sale-allocation .theme-title {padding-bottom: 100px;}
+.coin-sale-section .coin-sale-allocation .allocation-box {
   background: #0d27ab;
   border-radius: 3px;
   padding: 45px 15px 30px 40px;
 }
-.token-sale-section .token-sale-allocation .allocation-box p {
+.coin-sale-section .coin-sale-allocation .allocation-box p {
   line-height: 30px;
   color: #fff;
   padding-bottom: 45px;
 }
-.token-sale-section .token-sale-allocation .allocation-box ul li {
+.coin-sale-section .coin-sale-allocation .allocation-box ul li {
   position: relative;
   padding-left: 65px;
   margin-bottom: 38px;
 }
-.token-sale-section .token-sale-allocation .allocation-box ul li h3 {
+.coin-sale-section .coin-sale-allocation .allocation-box ul li h3 {
   font-family: 'brandon_grotesquebold';
   font-size: 35px;
   margin-bottom: -3px;
 }
-.token-sale-section .token-sale-allocation .allocation-box ul li span {color: #fff;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(1) h3 {color: #ffcc41;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(2) h3 {color: #ec3737;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(3) h3 {color: #a32dd9;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:before {
+.coin-sale-section .coin-sale-allocation .allocation-box ul li span {color: #fff;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(1) h3 {color: #ffcc41;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(2) h3 {color: #ec3737;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(3) h3 {color: #a32dd9;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:before {
   content: '';
   width: 45px;
   height: 45px;
@@ -1503,17 +1502,17 @@ ul li ul.dropdown-list:focus {
   top:8px;
   left:0;
 }
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(1):before {border: 10px solid  #ffcc41;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(2):before {border: 10px solid  #ec3737;}
-.token-sale-section .token-sale-allocation .allocation-box ul li:nth-child(3):before {border: 10px solid  #a32dd9;}
-.token-sale-section.light-bg .token-sale-allocation .allocation-box {
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(1):before {border: 10px solid  #ffcc41;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(2):before {border: 10px solid  #ec3737;}
+.coin-sale-section .coin-sale-allocation .allocation-box ul li:nth-child(3):before {border: 10px solid  #a32dd9;}
+.coin-sale-section.light-bg .coin-sale-allocation .allocation-box {
   background: #fff;
   border:1px solid #e3e3e3;
   border-radius: 5px;
 }
-.token-sale-section.light-bg .token-sale-allocation .allocation-box p,
-.token-sale-section.light-bg .token-sale-allocation .allocation-box ul li span {color: #3b3b3b;}
-.token-sale-section.light-bg {padding-bottom: 350px;}
+.coin-sale-section.light-bg .coin-sale-allocation .allocation-box p,
+.coin-sale-section.light-bg .coin-sale-allocation .allocation-box ul li span {color: #3b3b3b;}
+.coin-sale-section.light-bg {padding-bottom: 350px;}
 /*---------------------- Our Road Mape ------------------*/
 .our-road-map {
   background: #1217a4;

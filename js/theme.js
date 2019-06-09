@@ -67,26 +67,26 @@
     $('#features2-p1').html(language.features2_p1);
     $('#features2-p2').html(language.features2_p2);
     $('#features2-p3').html(language.features2_p3);
-    $('#token-sale-text').html(language.token_sale_text);
-    $('#token-sale-p').html(language.token_sale_p);
-    $('#token-stage1').html(language.token_stage1);
-    $('#token-stage1-p').html(language.token_stage1_p);
-    $('#token-stage1-date').html(language.token_stage1_date);
-    $('#tokens-to-sell-1').html(language.tokens_to_sell_1);
+    $('#coin-sale-text').html(language.coin_sale_text);
+    $('#coin-sale-p').html(language.coin_sale_p);
+    $('#coin-stage1').html(language.coin_stage1);
+    $('#coin-stage1-p').html(language.coin_stage1_p);
+    $('#coin-stage1-date').html(language.coin_stage1_date);
+    $('#coins-to-sell-1').html(language.coins_to_sell_1);
     $('#stage1-bonus').html(language.stage1_bonus);
     $('#stage1-bonus-p').html(language.stage1_bonus_p);
-    $('#token-sale-p-2').html(language.token_sale_p_2);
-    $('#token-presale-1').html(language.token_presale_1);
-    $('#token-stage2').html(language.token_stage2);
-    $('#token-stage2-p').html(language.token_stage2_p);
-    $('#token-stage2-date').html(language.token_stage2_date);
+    $('#coin-sale-p-2').html(language.coin_sale_p_2);
+    $('#coin-presale-1').html(language.coin_presale_1);
+    $('#coin-stage2').html(language.coin_stage2);
+    $('#coin-stage2-p').html(language.coin_stage2_p);
+    $('#coin-stage2-date').html(language.coin_stage2_date);
     $('#stage2-bonus-p').html(language.stage2_bonus_p);
     $('#soft-cap').html(language.soft_cap);
-    $('#token-sale-allocation').html(language.token_sale_allocation);
-    $('#token-sale-p-1').html(language.token_sale_p_1);
-    $('#token_presale_1').html(language.token_presale_1);
-    $('#token-presale-2').html(language.token_presale_2);
-    $('#token-presale-3').html(language.token_presale_3);
+    $('#coin-sale-allocation').html(language.coin_sale_allocation);
+    $('#coin-sale-p-1').html(language.coin_sale_p_1);
+    $('#coin_presale_1').html(language.coin_presale_1);
+    $('#coin-presale-2').html(language.coin_presale_2);
+    $('#coin-presale-3').html(language.coin_presale_3);
     $('#road-map').html(language.road_map);
     $('#road-map-p').html(language.road_map_p);
     $('#dont-miss-mobile').html(language.dont_miss_mobile);
@@ -383,7 +383,7 @@
         },
         {
           date: 'October 24, 2019',
-          content: '<p>Private Token <br> Round</p>'
+          content: '<p>Private coin <br> Round</p>'
         },
         {
           date: 'November 14, 2019',
