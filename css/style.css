@@ -83,7 +83,7 @@
 #loader {
   background: url(../images/1.gif);
   width: 256px;
-  background-size: 50%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; 
   height: 256px;
