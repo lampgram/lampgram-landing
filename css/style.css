@@ -382,7 +382,7 @@ body .theme-button:hover span {opacity: 1;}
 }
 
 .darken-font {
-  color: black;
+  color: rgb(27, 27, 27);
 }
 
 ul li ul.dropdown-list {
@@ -403,7 +403,8 @@ ul li ul.dropdown-list:active,
 ul li ul.dropdown-list:focus {
   visibility: visible;
   opacity: 1;
-  display: block
+  display: block;
+  z-index:999999;
 }
 
 
