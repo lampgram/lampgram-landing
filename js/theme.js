@@ -147,9 +147,10 @@
     getLanguage();
     $(`#${localStorage.getItem('language')}`).attr("selected", true);
 
-    fetch('https://stormy-escarpment-21788.herokuapp.com/https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
-      .then(data => (data.json()))
+    fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
+     .then(data => (data.json()))
       .then(res => {
+        console.log(res);
         $('.ex-rate').html(`${res.priceChangePercent}%`);
 
         if (res.priceChangePercent >= 0) {
@@ -161,9 +162,10 @@
           $('.arrow-ex-icon').addClass('flaticon-down-caret');
         }
 
-        fetch('https://stormy-escarpment-21788.herokuapp.com/https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*' })
-          .then(data => (data.json()))
+        fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*'})
+        .then(data => (data.json()))
           .then(respon => {
+            console.log(respon);
             let btcRate = respon.weightedAvgPrice;
             $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
             $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
