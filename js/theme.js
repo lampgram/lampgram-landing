@@ -150,7 +150,6 @@
     fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
      .then(data => (data.json()))
       .then(res => {
-        console.log(res);
         $('.ex-rate').html(`${res.priceChangePercent}%`);
 
         if (res.priceChangePercent >= 0) {
@@ -165,7 +164,6 @@
         fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*'})
         .then(data => (data.json()))
           .then(respon => {
-            console.log(respon);
             let btcRate = respon.weightedAvgPrice;
             $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
             $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
@@ -491,28 +489,8 @@
           setLanguage(evt.selectedItem);
           getLanguage();
         }
-        //      ,afterLoad: function(evt){
-        //          alert("The selected language has been loaded");
-        //      },
-        //      beforeOpen: function(evt){
-        //          alert("before open");
-        //      },
-        //      afterOpen: function(evt){
-        //          alert("after open");
-        //      },
-        //      beforeClose: function(evt){
-        //          alert("before close");
-        //      },
-        //      afterClose: function(evt){
-        //          alert("after close");
-        //      }
       });
     };
-
-
-
-
-
 
 
     // ---------------------------------- Validation Alert
