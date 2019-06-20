@@ -91,7 +91,7 @@
     $('#road-map-p').html(language.road_map_p);
     $('#dont-miss-mobile').html(language.dont_miss_mobile);
     $('#dont-miss-mobile-p').html(language.dont_miss_mobile_p);
-    $('#dont-miss-mobile-h6').html(language.dont_miss_mobile_h6);
+    $('#dont-miss-mobile-h4').html(language.dont_miss_mobile_h6);
     $('#dont-miss-mobile-p2').html(language.dont_miss_mobile_p2);
     $('#bragging').html(language.bragging);
     $('#bragging-p').html(language.bragging_p);
