@@ -33,7 +33,7 @@
 	<!-- Color Css -->
 	<link rel="stylesheet" type="text/css" as="style" href="css/color-one.css">
 
-	<link href="vendor/agency.css" rel="stylesheet">
+	<link href="vendor/agency.css" as="style" rel="stylesheet">
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -592,47 +592,6 @@
 
 			<!-- Theme js -->
 			<script src="js/theme.js"></script>
-			<script>
-
-				var onloadCallback = function () {
-					grecaptcha.render('captcha_place', {
-						'sitekey': '6Lc24KEUAAAAABEezE9m0tI_vVBQ0hOZ1zzmiMUr',
-						'callback': onSubmit
-					});
-				};
-
-				var onSubmit = function () {
-					console.log('success!');
-				};
-
-				$("#contactf").submit(function (e) {
-					e.preventDefault();
-					var $captcha = $('#captcha_place'),
-						response = grecaptcha.getResponse();
-					if (response.length === 0) {
-						if (!$captcha.hasClass("error")) {
-							$captcha.addClass("error");
-						}
-					} else {
-						$captcha.removeClass("error");
-						const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the subject is ${document.getElementById('website_topic').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
-						fetch(url, {
-							method: "POST"
-						}).then(
-							response => response.text()
-						).then(
-							html => {
-								swal("Submitted!", "Our Telegram bot is taking care of delivering your message to one of the eagle managers!", "success");
-								let fields = ['first_name', 'last_name', 'website_topic', 'email_form', 'website_form'];
-								let i = 0;
-								for (i; i < 5; i++) {
-									document.getElementById(fields[i]).value = '';
-								}
-							}
-						);
-					}
-				});
-			</script>
 		</div> <!-- /.main-page-wrapper -->
 </body>
 
