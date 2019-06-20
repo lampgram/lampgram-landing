@@ -2,6 +2,25 @@
 <html lang="en">
 
 <head>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-M85GBBN');</script>
+	<!-- End Google Tag Manager -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142491953-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-142491953-1');
+	</script>
+
 	<meta charset="UTF-8">
 	<meta name="keywords" content="crypto, exchange, bitcoin, ico, blockchain">
 	<meta name="author" content="Lampgram">
@@ -27,14 +46,6 @@
 	<link href="vendor/agency.css" rel="stylesheet">
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142491953-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-142491953-1');
-	</script>
 
 
 	<!--[if lt IE 9]>
@@ -612,7 +623,6 @@
 						if (!$captcha.hasClass("error")) {
 							$captcha.addClass("error");
 						}
-
 					} else {
 						$captcha.removeClass("error");
 						const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the subject is ${document.getElementById('website_topic').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
@@ -634,6 +644,10 @@
 				});
 			</script>
 		</div> <!-- /.main-page-wrapper -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M85GBBN" height="0" width="0"
+				style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
