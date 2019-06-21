@@ -378,12 +378,12 @@
           content: '<p>Development <br> Started</p>'
         },
         {
-          date: 'October 14, 2019',
+          date: 'June 14, 2019',
           content: '<p>Pre-ICO Opens</p>'
         },
         {
           date: 'October 24, 2019',
-          content: '<p>Private coin <br> Round</p>'
+          content: '<p>Private Coin <br> Round</p>'
         },
         {
           date: 'November 14, 2019',
