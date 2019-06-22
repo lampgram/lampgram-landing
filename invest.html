@@ -443,7 +443,7 @@
 
 				} else {
 					$captcha.removeClass("error");
-					const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
+					const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the email is ${document.getElementById('email_form').value}, the full name is ${document.getElementById('website_form').value}`;
 					fetch(url, {
 						method: "POST"
 					}).then(
@@ -451,9 +451,9 @@
 					).then(
 						html => {
 							swal("Submitted!", "Our Telegram bot is taking care of delivering your message to one of the eagle managers!", "success");
-							let fields = ['first_name', 'last_name', 'website_topic', 'email_form', 'website_form'];
+							let fields = ['email_form', 'website_form'];
 							let i = 0;
-							for (i; i < 5; i++) {
+							for (i; i < 2; i++) {
 								document.getElementById(fields[i]).value = '';
 							}
 						}
