@@ -135,7 +135,6 @@
     $('#become-member').html(language.become_member);
     $('#become-member1').html(language.become_member1);
     $('#become-member2').html(language.become_member2);
-    $('#become-member3').html(language.become_member3);
     $('.copyright').html(language.copyright);
   }
   function setLanguage(lang) {
