@@ -443,7 +443,7 @@
 
 				} else {
 					$captcha.removeClass("error");
-					const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the subject is ${document.getElementById('website_topic').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
+					const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
 					fetch(url, {
 						method: "POST"
 					}).then(
