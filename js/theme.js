@@ -146,32 +146,29 @@
     getLanguage();
     $(`#${localStorage.getItem('language')}`).attr("selected", true);
 
-    fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
-     .then(data => (data.json()))
-      .then(res => {
-        $('.ex-rate').html(`${res.priceChangePercent}%`);
+    // fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
+    //  .then(data => (data.json()))
+    //   .then(res => {
+    //     $('.ex-rate').html(`${res.priceChangePercent}%`);
 
-        if (res.priceChangePercent >= 0) {
-          $('.ex-icon').addClass('range-up');
-          $('.arrow-ex-icon').addClass('flaticon-up-caret');
-        }
-        else {
-          $('.ex-icon').addClass('range-down');
-          $('.arrow-ex-icon').addClass('flaticon-down-caret');
-        }
+    //     if (res.priceChangePercent >= 0) {
+    //       $('.ex-icon').addClass('range-up');
+    //       $('.arrow-ex-icon').addClass('flaticon-up-caret');
+    //     }
+    //     else {
+    //       $('.ex-icon').addClass('range-down');
+    //       $('.arrow-ex-icon').addClass('flaticon-down-caret');
+    //     }
 
-        fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*'})
-        .then(data => (data.json()))
-          .then(respon => {
-            let btcRate = respon.weightedAvgPrice;
-            $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
-            $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
-            $('.amount-g').html(`$${(res.weightedAvgPrice * btcRate * 2723360000).toPrecision(9)}`);
-          })
-      });
-
-
-
+    //     fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*'})
+    //     .then(data => (data.json()))
+    //       .then(respon => {
+    //         let btcRate = respon.weightedAvgPrice;
+    //         $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
+    //         $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
+    //         $('.amount-g').html(`$${(res.weightedAvgPrice * btcRate * 2723360000).toPrecision(9)}`);
+    //       })
+    //   });
 
 
     // -------------------- Navigation Scroll
