@@ -24,9 +24,6 @@
 </head>
 
 <body>
-
-
-
 	<div class="flex-w flex-str size1 overlay1">
 		<div class="flex-w flex-col-sb wsize1 bg0 p-l-70 p-t-37 p-b-52 p-r-50 respon1">
 			<div class="wrappic1">
@@ -45,10 +42,10 @@
 					Follow us for Exchange updates now!
 				</p>
 
-				<form action='/index.html' class="contact100-form validate-form m-t-10 m-b-10">
+				<form id="emailf" autocomplete="off" class="contact100-form validate-form m-t-10 m-b-10">
 					<div class="wrap-input100 validate-input m-lr-auto-lg"
 						data-validate="Email is required: ex@abc.com">
-						<input class="s2-txt1 placeholder0 input100 trans-04" type="text" name="email"
+						<input id="inputf" class="s2-txt1 placeholder0 input100 trans-04" type="text" name="email"
 							placeholder="Email Address">
 
 						<button class="flex-c-m ab-t-r size2 hov1 respon5">
@@ -68,7 +65,8 @@
 					Follow us
 				</span>
 
-				<a href="https://www.facebook.com/pg/lampgram" class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
+				<a href="https://www.facebook.com/pg/lampgram"
+					class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
 					<i class="fa fa-facebook"></i>
 				</a>
 
@@ -102,7 +100,21 @@
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+		var onSubmit = function () {
+			console.log('success!');
+		};
 
+		$("#emailf").submit(function (e) {
+			e.preventDefault();
+			const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=Got New email! ${document.getElementById('inputf').value}`;
+			fetch(url, {
+				method: "POST"
+			}).then(
+				window.location = './index.html'
+			)
+		});
+	</script>
 
 </body>
 
