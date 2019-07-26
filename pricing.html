@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pricing | Lampgram</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" as="style" href="css/style.css">
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" as="style" href="css/responsive.css">
+    <!-- Color Css -->
+    <link rel="stylesheet" type="text/css" as="style" href="css/color-one.css">
+    <style>
+        @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+        .snip1404 {
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            color: #ffffff;
+            text-align: left;
+            font-size: 16px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px 10px;
+        }
+
+        .foo {
+            margin-top: 200px;
+        }
+
+        .snip1404 img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .snip1404 .plan {
+            margin: 0;
+            width: 25%;
+            position: relative;
+            float: left;
+            overflow: hidden;
+            border: 3px solid #111111;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: #0074D9;
+        }
+
+        .snip1404 .plan:hover i,
+        .snip1404 .plan.hover i {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .snip1404 .plan:first-of-type {
+            border-radius: 8px 0 0 8px;
+        }
+
+        .snip1404 .plan:last-of-type {
+            border-radius: 0 8px 8px 0;
+        }
+
+        .snip1404 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+        }
+
+        .snip1404 header {
+            background-color: #0074D9;
+            color: #ffffff;
+        }
+
+        .snip1404 .plan-title {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            margin: 0;
+            padding: 20px 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .snip1404 .plan-title:after {
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 40px 300px 0 0;
+            border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+        }
+
+        .snip1404 .plan-cost {
+            padding: 40px 20px 10px;
+            text-align: right;
+        }
+
+        .snip1404 .plan-price {
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        .snip1404 .plan-type {
+            opacity: 0.8;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+
+        .snip1404 .plan-features {
+            padding: 0 0 20px;
+            margin: 0;
+            list-style: outside none none;
+        }
+
+        .snip1404 .plan-features li {
+            padding: 8px 5%;
+        }
+
+        .snip1404 .plan-features i {
+            margin-right: 8px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .snip1404 .plan-select {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .snip1404 .plan-select a {
+            background-color: #111111;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 0.75em;
+            font-weight: 600;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+        }
+
+        .snip1404 .plan-select a:hover {
+            background-color: rgb(51, 51, 51);
+        }
+
+        .snip1404 .featured {
+            margin-top: -10px;
+            border-color: rgb(37, 37, 37);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .snip1404 .featured .plan-select {
+            padding: 30px 20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .snip1404 .plan {
+                width: 50%;
+            }
+
+            .snip1404 .plan-title,
+            .snip1404 .plan-select a {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            .snip1404 .plan-select,
+            .snip1404 .featured .plan-select {
+                padding: 20px;
+            }
+
+            .snip1404 .featured {
+                margin-top: 0;
+            }
+        }
+
+        @media only screen and (max-width: 440px) {
+            .snip1404 .plan {
+                width: 100%;
+            }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+
+        .letter {
+            display: inline-block;
+            font-weight: 900;
+            font-size: 8em;
+            margin: 0.2em;
+            position: relative;
+            color: #00B4F1;
+            transform-style: preserve-3d;
+            perspective: 400;
+            z-index: 1;
+        }
+
+        .letter:before,
+        .letter:after {
+            position: absolute;
+            content: attr(data-letter);
+            transform-origin: top left;
+            top: 0;
+            left: 0;
+        }
+
+        .letter,
+        .letter:before,
+        .letter:after {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .letter:before {
+            color: black;
+            text-shadow:
+                -1px 0px 1px rgba(255, 255, 255, .8),
+                1px 0px 1px rgba(0, 0, 0, .8);
+            z-index: 3;
+            transform:
+                rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+        }
+
+        .letter:after {
+            color: rgba(0, 0, 0, .11);
+            z-index: 2;
+            transform:
+                scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+        }
+
+        .letter:hover:before {
+            color: #000000;
+            transform:
+                rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+        }
+
+        .letter:hover:after {
+            transform:
+                scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+
+        <div class="testimonial-section">
+            <div class="container">
+                <div class="html-top-content">
+                    <header class="theme-main-menu">
+                        <div class="container">
+                            <div class="menu-wrapper clearfix">
+                                <div class="logo" style="margin: 0 0px 0 5px;"><a href="#" style="overflow: hidden;"
+                                        title="Go to The Home Page"><img
+                                            style="max-width:280px; margin:4px -26px 0 -32px;"
+                                            src="images/logo/lampgram.svg" alt="Lampgram General Logo"></a></div>
+
+                                <ul class="right-widget celarfix">
+                                    <li>
+                                        <div id="polyglotLanguageSwitcher">
+                                            <form action="#">
+                                                <select id="polyglot-language-options">
+                                                    <option id="en" value="en">EN</option>
+                                                    <option id="ru" value="ru">RU</option>
+                                                    <option id="zh" value="zh">ZH</option>
+
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="login-button"><a id="login-text" href="/exchange.html"
+                                            title="Login to the Exchange" target="_blank">Login <i
+                                                class="flaticon-right-thin"></i></a></li>
+                                </ul> <!-- /.right-widget -->
+
+                                <!-- Navigation -->
+                                <nav class="navbar navbar-expand-lg" id="mega-menu-holder">
+                                    <div class="container">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item">
+                                                    <a id="exchange-text" class="nav-link js-scroll-trigger"
+                                                        href="/exchange.html" target="_blank"
+                                                        title="Exchange Tab">Exchange</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a id="store-text" class="nav-link js-scroll-trigger"
+                                                        href="https://lampgram.com/store/" target="_blank"
+                                                        title="Store Tab">Store</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a id="invest-text" class="nav-link js-scroll-trigger"
+                                                        href="/invest.html" title="Invest Tab">Invest</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a id="list-text" class="nav-link" href="/Lampgram_Litepaper.pdf"
+                                                        title="Read Lampgram Litepaper">Litepaper</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a id="about-text" class="nav-link js-scroll-trigger"
+                                                        href="/about.html" title="About Us Tab">About</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div> <!-- /.menu-wrapper -->
+                        </div> <!-- /.container -->
+                    </header> <!-- /.theme-main-menu -->
+
+
+                    <!-- ********************** Theme Top Banne & Header ************************ -->
+                    <div class="foo">
+                        <span class="letter" data-letter="#">#</span>
+                        <span class="letter" data-letter="B">B</span>
+                        <span class="letter" data-letter="U">U</span>
+                        <span class="letter" data-letter="I">I</span>
+                        <span class="letter" data-letter="L">L</span>
+                        <span class="letter" data-letter="D">D</span>
+                        <span class="letter" data-letter="_">_</span>
+                        <span class="letter" data-letter="Y">Y</span>
+                        <span class="letter" data-letter="O">O</span>
+                        <span class="letter" data-letter="U">U</span>
+                        <span class="letter" data-letter="R">R</span>
+
+                        <span class="letter" data-letter="_">_</span>
+                        <span class="letter" data-letter="B">B</span>
+                        <span class="letter" data-letter="U">U</span>
+                        <span class="letter" data-letter="S">S</span>
+                        <span class="letter" data-letter="I">I</span>
+                        <span class="letter" data-letter="N">N</span>
+                        <span class="letter" data-letter="E">E</span>
+                        <span class="letter" data-letter="S">S</span>
+                        <span class="letter" data-letter="S">S</span>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="margin: 0 auto;" class="snip1404">
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+                                    Starter
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$19</span><span
+                                        class="plan-type">/month</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>5GB Linux Web Space</li>
+                                <li><i class="ion-checkmark"> </i>5 MySQL Databases</li>
+                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
+                                <li><i class="ion-checkmark"> </i>250Gb mo Transfer</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
+                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                            </ul>
+                            <div class="plan-select"><a href="">Select Plan</a></div>
+                        </div>
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    Basic
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$29</span><span
+                                        class="plan-type">/month</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>10GB Linux Web Space</li>
+                                <li><i class="ion-checkmark"> </i>10 MySQL Databases</li>
+                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
+                                <li><i class="ion-checkmark"> </i>500Gb mo Transfer</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
+                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                            </ul>
+                            <div class="plan-select"><a href="">Select Plan</a></div>
+                        </div>
+                        <div class="plan featured">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    Professional
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$49</span><span
+                                        class="plan-type">/month</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>25GB Linux Web Space</li>
+                                <li><i class="ion-checkmark"> </i>25 MySQL Databases</li>
+                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
+                                <li><i class="ion-checkmark"> </i>2000Gb mo Transfer</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
+                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                            </ul>
+                            <div class="plan-select"><a href="">Select Plan</a></div>
+                        </div>
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    Ultra
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$99</span><span
+                                        class="plan-type">/month</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>100GB Linux Web Space</li>
+                                <li><i class="ion-checkmark"> </i>Unlimited MySQL Databases</li>
+                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
+                                <li><i class="ion-checkmark"> </i>10000Gb mo Transfer</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
+                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                            </ul>
+                            <div class="plan-select"><a href="">Select Plan</a></div>
+                        </div>
+                    </div> <!-- /.container -->
+
+
+
+
+
+
+
+                    
+                </div> <!-- /.testimonial-section -->
+            </div>
+        </div>
+        <!--
+				=====================================================
+					Footer 
+				=====================================================
+                -->
+
+        <footer class="theme-footer">
+            <img src="images/shape/31.png" alt="World Map Background" class="shape">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <div class="top-footer-data-wrapper">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 footer-logo">
+                                <h4 class="title">Lampgram</h4>
+                                <a href="mailto:invest@lampgram.com?subject=Investing in Lampgram.com&body=Hello!"
+                                    target="_top" title="Invest in Lampgram" class="email">invest@lampgram.com</a>
+                                <div id="btc-donation" class="mobile">BTC donations address:
+                                    1EGLhzo6pH65E2oA6WD2dNPJYKro91jZEn</div>
+                            </div> <!-- /.footer-logo -->
+                            <div class="col-lg-2 col-sm-6 footer-list">
+                                <h4 id="quick-links" class="title">Quick Links</h4>
+                                <ul>
+                                    <li><a id="quick-links4" title="Report a Bug" href="https://t.me/lampgram_chat"
+                                            target="_blank">Report Bug</a></li>
+                                    <li><a id="quick-links5" title="Check Pricing at our Store"
+                                            href="https://lampgram.com/store/" target="_blank">Pricing</a></li>
+                                </ul>
+                            </div> <!-- /.footer-list -->
+                            <div class="col-lg-3 col-sm-6 footer-list">
+                                <h4 id="about-us" class="title">About Us</h4>
+                                <ul>
+                                    <li><a id="about-us2" title="Learn about Vacancies here" href="https://t.me/avowe"
+                                            target="_blank">Jobs</a></li>
+                                    <li><a id="about-us3" title="Learn about the team behind the project"
+                                            href="/about.html#team" target="_blank">Team</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- /.footer-list -->
+                            <div class="col-lg-3 col-sm-6 footer-list">
+                                <h4 id="become-member" class="title">Become A Member</h4>
+                                <ul>
+                                    <li><a id="become-member1" title="Become a GitHub contributor"
+                                            href="https://t.me/lampgram_chat" target="_blank">Contributor</a></li>
+                                    <li><a id="become-member2" title="Become a full member" href="/exchange.html"
+                                            target="_blank">Union
+                                            Member</a></li>
+                                </ul>
+                            </div> <!-- /.footer-list -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.top-footer-data-wrapper -->
+
+                    <div class="bottom-footer clearfix">
+                        <p class="copyright">&copy;© 2019 <a href="#" title="Enjoy the prosperity of 
+                                    the decentralized ecosystem.">Lampgram.</a> All
+                            rights
+                            reserved.</p>
+                        <ul>
+                            <li itemscope itemtype="http://schema.org/Organization"><a href="https://t.me/lampgram_chat"
+                                    itemprop="url" title="Open Telegram Chat" target="_blank"><i class="fa fa-telegram"
+                                        aria-hidden="true"></i></a></li>
+
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://www.linkedin.com/company/lampgram" itemprop="url"
+                                    title="Find Us on LinkedIn" target="_blank"><i class="fa fa-linkedin"
+                                        aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://www.facebook.com/pg/lampgram" itemprop="url"
+                                    title="Find Us on Facebook" target="_blank"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://twitter.com/lampgram" itemprop="url" title="Find Us on Twitter"
+                                    target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://www.instagram.com/lampgram_official/" itemprop="url"
+                                    title="Find Us on Instagram" target="_blank"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://medium.com/@lampgram" itemprop="url" target="_blank"
+                                    title="Read Us on Medium"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                            </li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://www.tumblr.com/blog/lampgram" itemprop="url" title="Find Us on Tumblr"
+                                    target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://www.youtube.com/c/Lampgram" itemprop="url" title="Watch Us on YouTube"
+                                    target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li itemscope itemtype="http://schema.org/Organization"><a
+                                    href="https://github.com/lampgram" itemprop="url" target="_blank"
+                                    title="Find Us on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div> <!-- /.bottom-footer -->
+                </div>
+            </div> <!-- /.container -->
+        </footer>
+    </div>
+    <script src="vendor/jquery.2.2.3.min.js"></script>
+    <!-- Popper js -->
+    <script src="vendor/popper.js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Vendor js _________ -->
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Language Stitcher -->
+    <script src="vendor/language-switcher/jquery.polyglot.language.switcher.js"></script>
+    <!-- js count to -->
+    <script src="vendor/jquery.appear.js"></script>
+    <script src="vendor/jquery.countTo.js"></script>
+    <!-- Fancybox -->
+    <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <!-- owl Carousel -->
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <!-- AOS js -->
+    <script src="vendor/aos-next/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        /* Demo purposes only */
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+</body>
+
+</html>
