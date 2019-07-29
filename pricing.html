@@ -21,11 +21,14 @@
         .snip1404 {
             font-family: 'Source Sans Pro', Arial, sans-serif;
             color: #ffffff;
-            text-align: left;
+            align-items: center;
+            justify-content: center;
             font-size: 16px;
             width: 100%;
             max-width: 1000px;
-            margin: 50px 10px;
+            display: flex;
+
+
         }
 
         .foo {
@@ -37,14 +40,13 @@
             left: 0;
             top: 0;
             height: 100%;
-            z-index: -1;
         }
 
         .snip1404 .plan {
             margin: 0;
             width: 25%;
             position: relative;
-            float: left;
+
             overflow: hidden;
             border: 3px solid #111111;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -84,6 +86,8 @@
             padding: 20px 20px 0;
             text-transform: uppercase;
             letter-spacing: 4px;
+            color: white;
+            font-size: 17px;
         }
 
         .snip1404 .plan-title:after {
@@ -100,12 +104,12 @@
 
         .snip1404 .plan-cost {
             padding: 40px 20px 10px;
-            text-align: right;
+            text-align: center;
         }
 
         .snip1404 .plan-price {
             font-weight: 600;
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         .snip1404 .plan-type {
@@ -197,7 +201,7 @@
         .letter {
             display: inline-block;
             font-weight: 900;
-            font-size: 8em;
+            font-size: 3em;
             margin: 0.2em;
             position: relative;
             color: #00B4F1;
@@ -260,7 +264,7 @@
                     <header class="theme-main-menu">
                         <div class="container">
                             <div class="menu-wrapper clearfix">
-                                <div class="logo" style="margin: 0 0px 0 5px;"><a href="#" style="overflow: hidden;"
+                                <div class="logo" style="margin: 0 0px 0 5px;"><a href="/index.html" style="overflow: hidden;"
                                         title="Go to The Home Page"><img
                                             style="max-width:280px; margin:4px -26px 0 -32px;"
                                             src="images/logo/lampgram.svg" alt="Lampgram General Logo"></a></div>
@@ -355,218 +359,343 @@
                         <div class="plan">
                             <header>
                                 <h4 class="plan-title">
-                                    Starter
+                                    TRADING BOT
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$19</span><span
-                                        class="plan-type">/month</span>
+                                <div class="plan-cost"><span class="plan-price">$49</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>5GB Linux Web Space</li>
-                                <li><i class="ion-checkmark"> </i>5 MySQL Databases</li>
-                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
-                                <li><i class="ion-checkmark"> </i>250Gb mo Transfer</li>
-                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
-                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                                <li><i class="ion-checkmark"> </i>20+ trading strategies</li>
+                                <li><i class="ion-checkmark"> </i>Two neural networks</li>
+                                <li><i class="ion-checkmark"> </i>Easy to use</li>
+                                <li><i class="ion-checkmark"> </i>Web UI available</li>
+                                <li><i class="ion-checkmark"> </i>100% uptime</li>
+                                <li><i class="ion-checkmark"> </i>Works with 16 exchanges</li>
                             </ul>
-                            <div class="plan-select"><a href="">Select Plan</a></div>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c3e734aaf04361a8aea4218">Select Plan</a></div>
                         </div>
-                        <div class="plan">
-                            <header>
-                                <h4 class="plan-title">
 
-                                    Basic
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$29</span><span
-                                        class="plan-type">/month</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>10GB Linux Web Space</li>
-                                <li><i class="ion-checkmark"> </i>10 MySQL Databases</li>
-                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
-                                <li><i class="ion-checkmark"> </i>500Gb mo Transfer</li>
-                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
-                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
-                            </ul>
-                            <div class="plan-select"><a href="">Select Plan</a></div>
-                        </div>
                         <div class="plan featured">
                             <header>
                                 <h4 class="plan-title">
 
-                                    Professional
+                                    ADMIN PANEL
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$49</span><span
-                                        class="plan-type">/month</span>
+                                <div class="plan-cost"><span class="plan-price">$900</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>25GB Linux Web Space</li>
-                                <li><i class="ion-checkmark"> </i>25 MySQL Databases</li>
-                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
-                                <li><i class="ion-checkmark"> </i>2000Gb mo Transfer</li>
-                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
-                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                                <li><i class="ion-checkmark"> </i>Goes with back-end</li>
+                                <li><i class="ion-checkmark"> </i>Can manage with any kind of products</li>
+                                <li><i class="ion-checkmark"> </i>Supports storing PDF files</li>
+                                <li><i class="ion-checkmark"> </i>As primary database MongoDB is used</li>
+                                <li><i class="ion-checkmark"> </i>Supports file uploads & storing files in database
+                                    cluster</li>
+
                             </ul>
-                            <div class="plan-select"><a href="">Select Plan</a></div>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c5a0d9229495b4e3f44c548">Select Plan</a></div>
                         </div>
                         <div class="plan">
                             <header>
                                 <h4 class="plan-title">
 
-                                    Ultra
+                                    BLOGGING PLATFORM
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$99</span><span
+                                <div class="plan-cost"><span class="plan-price">$3800</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>Goes with own blockchain and 1 node</li>
+                                <li><i class="ion-checkmark"> </i>Free sticker pack for your blog</li>
+                                <li><i class="ion-checkmark"> </i>Own data processing secure server</li>
+                                <li><i class="ion-checkmark"> </i>You control over every aspect of your website</li>
+
+
+                            </ul>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c5a19f0b48d5960d1fcb36f">Select Plan</a></div>
+                        </div>
+
+
+                    </div> <!-- /.container -->
+
+                    <br>
+                    <br>
+                    <div style="margin: 0 auto;" class="snip1404">
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+                                    ETHEREUM GATEWAY
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$4999</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>Full ETH gateway setup</li>
+                                <li><i class="ion-checkmark"> </i>The basic fee is 0%</li>
+                                <li><i class="ion-checkmark"> </i>You can increase it and earn the commission</li>
+                                <li><i class="ion-checkmark"> </i>Buy once - charge fees forever!</li>
+                                <li><i class="ion-checkmark"> </i>Users can deposit or withdraw Ethereum from your
+                                    cryptocurrency exchange </li>
+
+
+                            </ul>
+                            <div class="plan-select"><a href="">Select Plan</a></div>
+                        </div>
+
+                        <div class="plan featured">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    RIPPLE GATEWAY
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$4999</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>Stands as an alternative to BTC</li>
+                                <li><i class="ion-checkmark"> </i>Full XRP gateway setup</li>
+                                <li><i class="ion-checkmark"> </i>You can allow your users to deposit and withdraw any
+                                    amount of XRP</li>
+                                <li><i class="ion-checkmark"> </i>Take the full control over the fee</li>
+                                <li><i class="ion-checkmark"> </i>Providing further
+                                    support</li>
+                            </ul>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c8eccf3cec57722c26e9794">Select Plan</a></div>
+                        </div>
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    EOS GATEWAY
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$4999</span><span
                                         class="plan-type">/month</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>100GB Linux Web Space</li>
-                                <li><i class="ion-checkmark"> </i>Unlimited MySQL Databases</li>
-                                <li><i class="ion-checkmark"> </i>Unlimited Email</li>
-                                <li><i class="ion-checkmark"> </i>10000Gb mo Transfer</li>
-                                <li><i class="ion-checkmark"> </i>24/7 Tech Support</li>
-                                <li><i class="ion-checkmark"> </i>Daily Backups</li>
+                                <li><i class="ion-checkmark"> </i>Take complete control fees and the code itself</li>
+                                <li><i class="ion-checkmark"> </i>Providing the full support of the setup</li>
+                                <li><i class="ion-checkmark"> </i>Get the whole payment service over your own control
+                                </li>
+                                <li><i class="ion-checkmark"> </i>Full EOS gateway setup with all of the necessary fixes
+                                    to any deployment problems and integration with your app</li>
+
                             </ul>
-                            <div class="plan-select"><a href="">Select Plan</a></div>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c8eca4acec57722c26e9793">Select Plan</a></div>
                         </div>
+
+
                     </div> <!-- /.container -->
 
+                    <br>
+                    <br>
+
+                    <div style="margin: 0 auto;" class="snip1404">
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+                                    LTC GATEWAY
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$4999</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>Take control all over the gateway</li>
+                                <li><i class="ion-checkmark"> </i>LTC is a cryptocurrency widely used among crypto
+                                    traders</li>
+                                <li><i class="ion-checkmark"> </i>Full LTC gateway setup</li>
+                                <li><i class="ion-checkmark"> </i>You can ask for further support Lampgram team</li>
 
 
+                            </ul>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c8ec670cec57722c26e9792">Select Plan</a></div>
+                        </div>
+
+                        <div class="plan featured">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    BITCOIN GATEWAY
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$4999</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>You get the full source code and can adjust the fees
+                                </li>
+                                <li><i class="ion-checkmark"> </i>The basic fee is 0%</li>
+                                <li><i class="ion-checkmark"> </i>Set your own fee and earn profits</li>
+                                <li><i class="ion-checkmark"> </i>Full BTC gateway setup</li>
+                                <li><i class="ion-checkmark"> </i>Our team can set up everything just for you if u will
+                                    have any troubles </li>
+
+                            </ul>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c8ab219ad7efbd6d406ed72">Select Plan</a></div>
+                        </div>
+                        <div class="plan">
+                            <header>
+                                <h4 class="plan-title">
+
+                                    DECENTRALIZED EXCHANGE
+                                </h4>
+                                <div class="plan-cost"><span class="plan-price">$19000</span>
+                                </div>
+                            </header>
+                            <ul class="plan-features">
+                                <li><i class="ion-checkmark"> </i>Allows to performs the trades based on the blockchain
+                                    network of nodes</li>
+                                <li><i class="ion-checkmark"> </i>Blockchain based delegated proof of stake</li>
+                                <li><i class="ion-checkmark"> </i>Allows to have own crypto coin</li>
+                                <li><i class="ion-checkmark"> </i>Setup of several nodes server with full source code
+                                    and further setup of other components</li>
+
+                            </ul>
+                            <div class="plan-select"><a href="https://lampgram.com/store/product/5c5a0d8729495b4e3f44c547">Select Plan</a></div>
+                        </div>
 
 
+                    </div> <!-- /.container -->
 
-
-                    
-                </div> <!-- /.testimonial-section -->
-            </div>
-        </div>
-        <!--
+                    <!--
 				=====================================================
 					Footer 
 				=====================================================
-                -->
+				-->
+                    <footer class="theme-footer">
+                        <img src="images/shape/31.png" alt="World Map Background" class="shape">
+                        <div class="container">
+                            <div class="inner-wrapper">
+                                <div class="top-footer-data-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-6 footer-logo">
+                                            <h4 class="title">Lampgram</h4>
+                                            <a href="mailto:invest@lampgram.com?subject=Investing in Lampgram.com&body=Hello!"
+                                                target="_top" title="Invest in Lampgram"
+                                                class="email">invest@lampgram.com</a>
+                                            <div id="btc-donation" class="mobile">BTC donations address:
+                                                1EGLhzo6pH65E2oA6WD2dNPJYKro91jZEn</div>
+                                        </div> <!-- /.footer-logo -->
+                                        <div class="col-lg-2 col-sm-6 footer-list">
+                                            <h4 id="quick-links" class="title">Quick Links</h4>
+                                            <ul>
+                                                <li><a id="quick-links4" title="Report a Bug"
+                                                        href="https://t.me/lampgram_chat" target="_blank">Report Bug</a>
+                                                </li>
+                                                <li><a id="quick-links5" title="Check Pricing at our Store" href="/pricing.html">Pricing</a>
+                                                </li>
+                                            </ul>
+                                        </div> <!-- /.footer-list -->
+                                        <div class="col-lg-3 col-sm-6 footer-list">
+                                            <h4 id="about-us" class="title">About Us</h4>
+                                            <ul>
+                                                <li><a id="about-us2" title="Learn about Vacancies here"
+                                                        href="https://t.me/avowe" target="_blank">Jobs</a></li>
+                                                <li><a id="about-us3" title="Learn about the team behind the project"
+                                                        href="/about.html#team">Team</a>
+                                                </li>
+                                            </ul>
+                                        </div> <!-- /.footer-list -->
+                                        <div class="col-lg-3 col-sm-6 footer-list">
+                                            <h4 id="become-member" class="title">Become A Member</h4>
+                                            <ul>
+                                                <li><a id="become-member1" title="Become a GitHub contributor"
+                                                        href="https://t.me/lampgram_chat"
+                                                        target="_blank">Contributor</a></li>
+                                                <li><a id="become-member2" title="Become a full member"
+                                                        href="/exchange.html" target="_blank">Union
+                                                        Member</a></li>
 
-        <footer class="theme-footer">
-            <img src="images/shape/31.png" alt="World Map Background" class="shape">
-            <div class="container">
-                <div class="inner-wrapper">
-                    <div class="top-footer-data-wrapper">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 footer-logo">
-                                <h4 class="title">Lampgram</h4>
-                                <a href="mailto:invest@lampgram.com?subject=Investing in Lampgram.com&body=Hello!"
-                                    target="_top" title="Invest in Lampgram" class="email">invest@lampgram.com</a>
-                                <div id="btc-donation" class="mobile">BTC donations address:
-                                    1EGLhzo6pH65E2oA6WD2dNPJYKro91jZEn</div>
-                            </div> <!-- /.footer-logo -->
-                            <div class="col-lg-2 col-sm-6 footer-list">
-                                <h4 id="quick-links" class="title">Quick Links</h4>
-                                <ul>
-                                    <li><a id="quick-links4" title="Report a Bug" href="https://t.me/lampgram_chat"
-                                            target="_blank">Report Bug</a></li>
-                                    <li><a id="quick-links5" title="Check Pricing at our Store"
-                                            href="https://lampgram.com/store/" target="_blank">Pricing</a></li>
-                                </ul>
-                            </div> <!-- /.footer-list -->
-                            <div class="col-lg-3 col-sm-6 footer-list">
-                                <h4 id="about-us" class="title">About Us</h4>
-                                <ul>
-                                    <li><a id="about-us2" title="Learn about Vacancies here" href="https://t.me/avowe"
-                                            target="_blank">Jobs</a></li>
-                                    <li><a id="about-us3" title="Learn about the team behind the project"
-                                            href="/about.html#team" target="_blank">Team</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- /.footer-list -->
-                            <div class="col-lg-3 col-sm-6 footer-list">
-                                <h4 id="become-member" class="title">Become A Member</h4>
-                                <ul>
-                                    <li><a id="become-member1" title="Become a GitHub contributor"
-                                            href="https://t.me/lampgram_chat" target="_blank">Contributor</a></li>
-                                    <li><a id="become-member2" title="Become a full member" href="/exchange.html"
-                                            target="_blank">Union
-                                            Member</a></li>
-                                </ul>
-                            </div> <!-- /.footer-list -->
-                        </div> <!-- /.row -->
-                    </div> <!-- /.top-footer-data-wrapper -->
+                                            </ul>
+                                        </div> <!-- /.footer-list -->
+                                    </div> <!-- /.row -->
+                                </div> <!-- /.top-footer-data-wrapper -->
 
-                    <div class="bottom-footer clearfix">
-                        <p class="copyright">&copy;© 2019 <a href="#" title="Enjoy the prosperity of 
-                                    the decentralized ecosystem.">Lampgram.</a> All
-                            rights
-                            reserved.</p>
-                        <ul>
-                            <li itemscope itemtype="http://schema.org/Organization"><a href="https://t.me/lampgram_chat"
-                                    itemprop="url" title="Open Telegram Chat" target="_blank"><i class="fa fa-telegram"
-                                        aria-hidden="true"></i></a></li>
+                                <div class="bottom-footer clearfix">
+                                    <p class="copyright">&copy;© 2019 <a href="/index.html" title="Enjoy the prosperity of 
+                                        the decentralized ecosystem.">Lampgram.</a> All
+                                        rights
+                                        reserved.</p>
+                                    <ul>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://t.me/lampgram_chat" itemprop="url"
+                                                title="Open Telegram Chat" target="_blank"><i class="fa fa-telegram"
+                                                    aria-hidden="true"></i></a></li>
 
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://www.linkedin.com/company/lampgram" itemprop="url"
-                                    title="Find Us on LinkedIn" target="_blank"><i class="fa fa-linkedin"
-                                        aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://www.facebook.com/pg/lampgram" itemprop="url"
-                                    title="Find Us on Facebook" target="_blank"><i class="fa fa-facebook"
-                                        aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://twitter.com/lampgram" itemprop="url" title="Find Us on Twitter"
-                                    target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://www.instagram.com/lampgram_official/" itemprop="url"
-                                    title="Find Us on Instagram" target="_blank"><i class="fa fa-instagram"
-                                        aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://medium.com/@lampgram" itemprop="url" target="_blank"
-                                    title="Read Us on Medium"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                            </li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://www.tumblr.com/blog/lampgram" itemprop="url" title="Find Us on Tumblr"
-                                    target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://www.youtube.com/c/Lampgram" itemprop="url" title="Watch Us on YouTube"
-                                    target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li itemscope itemtype="http://schema.org/Organization"><a
-                                    href="https://github.com/lampgram" itemprop="url" target="_blank"
-                                    title="Find Us on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div> <!-- /.bottom-footer -->
-                </div>
-            </div> <!-- /.container -->
-        </footer>
-    </div>
-    <script src="vendor/jquery.2.2.3.min.js"></script>
-    <!-- Popper js -->
-    <script src="vendor/popper.js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Vendor js _________ -->
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Language Stitcher -->
-    <script src="vendor/language-switcher/jquery.polyglot.language.switcher.js"></script>
-    <!-- js count to -->
-    <script src="vendor/jquery.appear.js"></script>
-    <script src="vendor/jquery.countTo.js"></script>
-    <!-- Fancybox -->
-    <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-    <!-- owl Carousel -->
-    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-    <!-- AOS js -->
-    <script src="vendor/aos-next/dist/aos.js"></script>
-    <script src="js/theme.js"></script>
-    <script>
-        /* Demo purposes only */
-        $(".hover").mouseleave(
-            function () {
-                $(this).removeClass("hover");
-            }
-        );
-    </script>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://www.linkedin.com/company/lampgram" itemprop="url"
+                                                title="Find Us on LinkedIn" target="_blank"><i class="fa fa-linkedin"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://www.facebook.com/pg/lampgram" itemprop="url"
+                                                title="Find Us on Facebook" target="_blank"><i class="fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://twitter.com/lampgram" itemprop="url"
+                                                title="Find Us on Twitter" target="_blank"><i class="fa fa-twitter"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://www.instagram.com/lampgram_official/" itemprop="url"
+                                                title="Find Us on Instagram" target="_blank"><i class="fa fa-instagram"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://medium.com/@lampgram" itemprop="url" target="_blank"
+                                                title="Read Us on Medium"><i class="fa fa-medium"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://www.tumblr.com/blog/lampgram" itemprop="url"
+                                                title="Find Us on Tumblr" target="_blank"><i class="fa fa-tumblr"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://www.youtube.com/c/Lampgram" itemprop="url"
+                                                title="Watch Us on YouTube" target="_blank"><i
+                                                    class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                        <li itemscope itemtype="http://schema.org/Organization"><a
+                                                href="https://github.com/lampgram" itemprop="url" target="_blank"
+                                                title="Find Us on Github"><i class="fa fa-github"
+                                                    aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- /.bottom-footer -->
+                            </div>
+                        </div> <!-- /.container -->
+                    </footer>
+
+
+
+
+                </div> <!-- /.testimonial-section -->
+            </div>
+        </div>
+
+        <script src="vendor/jquery.2.2.3.min.js"></script>
+        <!-- Popper js -->
+        <script src="vendor/popper.js/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Vendor js _________ -->
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Language Stitcher -->
+        <script src="vendor/language-switcher/jquery.polyglot.language.switcher.js"></script>
+        <!-- js count to -->
+        <script src="vendor/jquery.appear.js"></script>
+        <script src="vendor/jquery.countTo.js"></script>
+        <!-- Fancybox -->
+        <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+        <!-- owl Carousel -->
+        <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+        <!-- AOS js -->
+        <script src="vendor/aos-next/dist/aos.js"></script>
+        <script src="js/theme.js"></script>
+        <script>
+            /* Demo purposes only */
+            $(".hover").mouseleave(
+                function () {
+                    $(this).removeClass("hover");
+                }
+            );
+        </script>
 </body>
 
 </html>
