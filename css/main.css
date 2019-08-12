@@ -579,3 +579,7 @@ Primary use:
   /*---------------------------------------------*/
 
 }
+
+.no-spam {
+  color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 20px; font-weight: normal; text-shadow: 0 1px 1px #fff;
+}
