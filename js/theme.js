@@ -40,6 +40,7 @@
     $('#invest-text').html(language.invest);
     $('#list-text').html(language.list);
     $('#about-text').html(language.about);
+    $('#products-hub').html(language.products_hub);
     $('#first-header-text').html(language.first_h);
     $('#f-p').html(language.f_p);
     $('#store-link').html(language.store_l);

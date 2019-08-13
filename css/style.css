@@ -296,9 +296,11 @@ body .theme-button:hover span {opacity: 1;}
 #mega-menu-holder ul> li.nav-item> a.active:before {opacity: 1;transform: scale(1);}
 #mega-menu-holder .navbar-toggler {
   color: #fff;
+  
   padding: 5px 10px;
   margin-bottom: 8px;
 }
+
 .theme-main-menu .right-widget>li {float: left;}
 .theme-main-menu .right-widget .login-button a {
   width: 130px;
@@ -668,6 +670,18 @@ ul li ul.dropdown-list:focus {
   right: 20px;
   top:22px;
 }
+.dis-text {
+  color:#929eb3;
+}
+#arrow-down {
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom:2.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .stock-market-price #market-rate .main-wrapper .current-info.range-down {color: #ff4c2f;}
 .stock-market-price #market-rate .main-wrapper .current-info.range-up {color: #08dd67;}
 
@@ -692,7 +706,7 @@ ul li ul.dropdown-list:focus {
 .our-features-one {
   padding: 120px 0 155px;
   position: relative;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #dddddd;
 }
 .our-features-one:before {
   content: "\f105";
@@ -700,7 +714,7 @@ ul li ul.dropdown-list:focus {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #dddddd;
   text-align: center;
   line-height: 50px;
   color: #c0c0c0;
