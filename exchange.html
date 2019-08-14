@@ -86,9 +86,6 @@
 	</div>
 
 
-
-
-
 	<!--===============================================================================================-->
 	<script src="vendor/jquery.2.2.3.min.js"></script>
 	<!--===============================================================================================-->
@@ -99,6 +96,7 @@
 	<!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<!--===============================================================================================-->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		var onSubmit = function () {
@@ -107,12 +105,25 @@
 
 		$("#emailf").submit(function (e) {
 			e.preventDefault();
-			const url = `https://api.telegram.org/bot712881058:AAFdTcFeYvYR8p4LMTnN2SDAWWs7qVopVFo/sendMessage?chat_id=373514223&text=Got New email! ${document.getElementById('inputf').value}`;
-			fetch(url, {
-				method: "POST"
+			const url = `Got New email! ${document.getElementById('inputf').value}`;
+			fetch('https://lampgram.com/api/telegram/landing', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				},
+				body: url
 			}).then(
-				window.location = './index.html'
-			)
+				response => response.text()
+			).then(
+				html => {
+					swal("Submitted!", "Our Telegram bot is taking care of delivering your message to one of our eagle managers!", "success");
+					let fields = ['inputf'];
+					let i = 0;
+					for (i; i < 1; i++) {
+						document.getElementById(fields[i]).value = '';
+					}
+				}
+			);
 		});
 	</script>
 
