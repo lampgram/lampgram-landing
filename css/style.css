@@ -394,6 +394,8 @@ ul li ul.dropdown-list {
   opacity: 0;
   min-width: 5rem;
 	position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-top: 1rem;
   display: none;
@@ -408,7 +410,6 @@ ul li ul.dropdown-list:focus {
   display: block;
   z-index:999999;
 }
-
 
 .theme-banner-one .main-text-wrapper .button-group>li:first-child a:hover {
   background:rgb(36, 34, 34);
