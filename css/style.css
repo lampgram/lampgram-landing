@@ -404,8 +404,9 @@ ul li ul.dropdown-list:focus {
   z-index:999999;
 }
 
-.theme-banner-one .main-text-wrapper .button-group>li:first-child a:hover {
-  background:rgb(36, 34, 34);
+.theme-banner-one .main-text-wrapper .button-group>li a:hover {
+  background:rgb(255, 255, 255);
+  color:black;
 }
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .download-button,
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .dropdown-menu a {
@@ -758,7 +759,7 @@ ul li ul.dropdown-list:focus {
 .our-features-one .single-feature.border-fix:before {left:-75px;}
 .our-features-one .single-feature.border-fix:after {right: -75px;}
 /*-------------------- Our Feature Two --------------------*/
-.our-feature-two {padding: 200px 0 320px;}
+.our-feature-two {padding: 200px 0 120px;}
 .our-feature-two .text {
   position: relative;
   padding: 0 0 60px 60px;
@@ -780,6 +781,12 @@ ul li ul.dropdown-list:focus {
   top:35px;
   left:-67px;
 }
+
+.video-player {
+  width:50%;
+  margin:0 auto;
+}
+
 .our-feature-two .text .number:after {
   content: '';
   position: absolute;
@@ -798,7 +805,13 @@ ul li ul.dropdown-list:focus {
 .our-feature-two .text .learn-more {
   font-family: 'brandon_grotesquemedium';
   font-size: 22px;
-  color: #3c3c3c;
+  color: #000000;
+}
+.our-feature-two .text .learn-more:hover {
+  color: #ffffff!important;
+  background: black;
+  border-radius: 5px;
+  padding: 0 5px;
 }
 .our-feature-two .text .learn-more i {vertical-align: middle;font-size: 25px;margin-left: 12px;}
 .our-feature-two .text p {padding: 30px 0;}
@@ -1143,7 +1156,7 @@ ul li ul.dropdown-list:focus {
   color: #fff;
   font-size: 20px;
 }
-.contact-us-one form button:hover {background: #252525;}
+.contact-us-one form button:hover {background: #ffffff;color:black;}
 .contact-us-one.bg-color {
   position: relative;
   background: linear-gradient( 29deg, rgb(74,2,199) 0%, rgb(117,1,209) 100%);

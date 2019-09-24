@@ -1,5 +1,4 @@
 { 
-    "exchange": "Биржа",
     "login":"Логин <i class=\"flaticon-right-thin\"><\/i>",
     "store":"Маркет",
     "invest":"Инвесторам",
@@ -101,10 +100,10 @@
     "become_member2":"Партнерство",
     "become_member3":"Вычислительная мощность",
     "copyright":"© 2019 <a href=\"https://lampgram.com\">Lampgram.</a> Все права защищены.",
-    "purchase_coins":"Купить монеты Lampgram",
+    "purchase_coins":"Купить валюту Lampgram",
     "certificate_desc":"После покупки вы получите соответствующий сертификат на свою электронную почту. Запись о вашей покупке навсегда сохранится в нашей блокчейн датабазе",
     "invest_title":"Инвестируйте в будущее - будущее кристально чистых денег",
-    "private_sale_text":"Частная продажа монеты Lampgram - валюта для бизнеса",
+    "private_sale_text":"Частная продажа валюты Lampgram - валюта для бизнеса",
     "team_text":"Команда",
     "currency_text":"Валюта",
     "price_text":"Цена",

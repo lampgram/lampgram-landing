@@ -130,7 +130,8 @@ header.masthead .intro-text .intro-heading {
 }
 
 #btn-black:hover {
-  background: #212529;
+  background: #ffffff;
+  color: black;
 }
 
 #portfolio .portfolio-item {
@@ -147,6 +148,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  cursor: default;
   position: absolute;
   width: 100%;
   height: 100%;

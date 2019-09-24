@@ -59,6 +59,9 @@
 }
 
 @media (max-width: 991px) {
+  .video-player {
+    width: 100%;
+  }
   .theme-footer .bottom-footer .copyright {float: none;text-align: center;padding-bottom: 20px;}
   .theme-footer .bottom-footer ul {float: none;text-align: center;}
   .theme-main-menu #mega-menu-holder.dark-bg .navbar-nav {background:#1d1d21; }

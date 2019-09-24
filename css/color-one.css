@@ -2,7 +2,8 @@
 	background: black;
 }
 div.btn-group a.download-button:hover {
-	background: #212529!important;
+	background: white!important;
+	color:black!important;
 }
 .scroll-top,.theme-banner-one .main-text-wrapper .button-group>li:last-child .download-button,
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .dropdown-menu a,

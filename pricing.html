@@ -21,6 +21,16 @@
     <!-- Color Css -->
     <link rel="stylesheet" type="text/css" as="style" href="css/color-one.css">
     <style>
+            #mega-menu-holder ul>li.nav-item>a#exchange-text:before {
+                opacity: 1;
+                transform: scale(1);
+            }
+    
+            #mega-menu-holder ul>li>a#exchange-text {
+                color: black;
+            }
+        </style>
+    <style>
         @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
         @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
@@ -50,9 +60,9 @@
 
         .snip1404 .plan {
             margin: 0;
-            width: 25%;
             position: relative;
             overflow: hidden;
+            min-width: 250px;
             border: 3px solid #111111;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             background-color: #0074D9;
@@ -65,11 +75,11 @@
         }
 
         .snip1404 .plan:first-of-type {
-            border-radius: 8px 0 0 8px;
+            border-radius: 8px;
         }
 
         .snip1404 .plan:last-of-type {
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px;
         }
 
         .snip1404 * {
@@ -158,7 +168,8 @@
         }
 
         .snip1404 .plan-select a:hover {
-            background-color: rgb(51, 51, 51);
+            background-color: rgb(255, 255, 255);
+            color:black;
         }
 
         .snip1404 .featured {
@@ -174,29 +185,13 @@
         }
 
         @media only screen and (max-width: 767px) {
-            .snip1404 .plan {
-                width: 50%;
+            .snip1404 {
+                flex-direction: column;
             }
-
-            .snip1404 .plan-title,
-            .snip1404 .plan-select a {
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-            }
-
-            .snip1404 .plan-select,
-            .snip1404 .featured .plan-select {
-                padding: 20px;
-            }
-
-            .snip1404 .featured {
-                margin-top: 0;
-            }
-        }
-
-        @media only screen and (max-width: 440px) {
             .snip1404 .plan {
                 width: 100%;
+                max-width:300px;
+                margin-bottom:80px;
             }
         }
 
@@ -288,46 +283,46 @@
                                         </div>
                                     </li>
 
-                                    <li class="login-button"><a id="login-text" href="/exchange.html"
+                                    <li class="login-button"><a id="login-text" href="https://lampgram.com/store/signup"
                                             title="Login to the Exchange" target="_blank">Login <i
                                                 class="flaticon-right-thin"></i></a></li>
                                 </ul> <!-- /.right-widget -->
 
                                 <!-- Navigation -->
                                 <nav class="navbar navbar-expand-lg" id="mega-menu-holder">
-                                    <div class="container">
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                            data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                                            aria-expanded="false" aria-label="Toggle navigation">
-                                            <i class="fa fa-bars" aria-hidden="true"></i>
-                                        </button>
-                                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                                            <ul class="navbar-nav">
-                                                <li class="nav-item">
-                                                    <a id="exchange-text" class="nav-link js-scroll-trigger"
-                                                        href="/exchange.html" target="_blank"
-                                                        title="Exchange Tab">Exchange</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="store-text"
-                                                        href="https://lampgram.com/store/">Store</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a id="invest-text" class="nav-link js-scroll-trigger"
-                                                        href="/invest.html" title="Invest Tab">Invest</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a id="list-text" class="nav-link"
-                                                        href="/Lampgram_Litepaper.pdf">Litepaper</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a id="about-text" class="nav-link js-scroll-trigger"
-                                                        href="/about.html" title="About Us Tab">About</a>
-                                                </li>
-                                            </ul>
+                                        <div class="container">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                                aria-expanded="false" aria-label="Toggle navigation">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="store-text"
+                                                            href="https://lampgram.com/store/">Store</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a id="invest-text" class="nav-link js-scroll-trigger"
+                                                            href="/invest.html" title="Invest Tab">Invest</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a id="list-text" class="nav-link"
+                                                            href="/Lampgram_Litepaper.pdf">Litepaper</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                            <a id="exchange-text" class="nav-link js-scroll-trigger"
+                                                                href="/pricing.html"
+                                                                title="Exchange Tab">Pricing</a>
+                                                        </li>
+                                                    <li class="nav-item">
+                                                        <a id="about-text" class="nav-link js-scroll-trigger" href="/about.html"
+                                                            title="About Us Tab">About</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                </nav>
+                                    </nav>
                             </div> <!-- /.menu-wrapper -->
                         </div> <!-- /.container -->
                     </header> <!-- /.theme-main-menu -->
@@ -363,21 +358,19 @@
                         <div class="plan">
                             <header>
                                 <h4 class="plan-title">
-                                    TRADING BOT
+                                    FREE
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$49</span>
+                                <div class="plan-cost"><span class="plan-price">$0</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>20+ trading strategies</li>
-                                <li><i class="ion-checkmark"> </i>Two neural networks</li>
-                                <li><i class="ion-checkmark"> </i>Easy to use</li>
-                                <li><i class="ion-checkmark"> </i>Web UI available</li>
-                                <li><i class="ion-checkmark"> </i>100% uptime</li>
-                                <li><i class="ion-checkmark"> </i>Works with 16 exchanges</li>
+                                <li><i class="ion-checkmark"> </i>Lifetime</li>
+                                <li><i class="ion-checkmark"> </i>Up to 10 projects to be listed</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Support</li>
+                                <li><i class="ion-checkmark"> </i>0% Commission from sales</li>
                             </ul>
                             <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c3e734aaf04361a8aea4218">Select Plan</a>
+                                    href="https://lampgram.com/store/signup">Select Plan</a>
                             </div>
                         </div>
 
@@ -385,201 +378,49 @@
                             <header>
                                 <h4 class="plan-title">
 
-                                    ADMIN PANEL
+                                    PRO
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$900</span>
+                                <div class="plan-cost"><span class="plan-price">$2</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Goes with back-end</li>
-                                <li><i class="ion-checkmark"> </i>Can be managed with any kind of products</li>
-                                <li><i class="ion-checkmark"> </i>Supports storing PDF files</li>
-                                <li><i class="ion-checkmark"> </i>MongoDB database</li>
-                                <li><i class="ion-checkmark"> </i>Supports file uploads & storing files in a database
-                                    cluster</li>
+                                <li><i class="ion-checkmark"> </i>Lifetime</li>
+                                <li><i class="ion-checkmark"> </i>Up to 20 projects to be listed</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Support</li>
+                                <li><i class="ion-checkmark"> </i>0% Commission from sales</li>
+                                <li><i class="ion-checkmark"> </i>Sales Scripts</li>
 
                             </ul>
                             <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c5a0d9229495b4e3f44c548">Select Plan</a>
+                                    href="https://lampgram.com/store/signup">Select Plan</a>
                             </div>
                         </div>
                         <div class="plan">
                             <header>
                                 <h4 class="plan-title">
 
-                                    BLOGGING PLATFORM
+                                    AGENCY
                                 </h4>
-                                <div class="plan-cost"><span class="plan-price">$3800</span>
+                                <div class="plan-cost"><span class="plan-price">$15</span>
                                 </div>
                             </header>
                             <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Goes with own blockchain </li>
-                                <li><i class="ion-checkmark"> </i>Free sticker pack for your blog</li>
-                                <li><i class="ion-checkmark"> </i>Secured data processing zserver</li>
-                                <li><i class="ion-checkmark"> </i>You take control over every aspect of your website
+                                <li><i class="ion-checkmark"> </i>Lifetime </li>
+                                <li><i class="ion-checkmark"> </i>999+ projects to be listed</li>
+                                <li><i class="ion-checkmark"> </i>24/7 Support</li>
+                                <li><i class="ion-checkmark"> </i>0% Commission from sales
                                 </li>
+                                <li><i class="ion-checkmark"> </i>Sales Trainings</li>
 
 
                             </ul>
                             <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c5a19f0b48d5960d1fcb36f">Select Plan</a>
+                                    href="https://lampgram.com/store/signup">Select Plan</a>
                             </div>
                         </div>
 
 
                     </div> <!-- /.container -->
-
-                    <br>
-                    <br>
-                    <div style="margin: 0 auto;" class="snip1404">
-                        <div class="plan">
-                            <header>
-                                <h4 class="plan-title">
-                                    ETHEREUM GATEWAY
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$4999</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Full ETH gateway setup</li>
-                                <li><i class="ion-checkmark"> </i>The basic fee is 0%</li>
-                                <li><i class="ion-checkmark"> </i>You can earn the commission</li>
-                                <li><i class="ion-checkmark"> </i>Buy once - charge fees forever!</li>
-                                <li><i class="ion-checkmark"> </i>Users can deposit or withdraw Ethereum from your
-                                    cryptocurrency exchange </li>
-
-
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c8ab888ad7efbd6d406ed73">Select Plan</a>
-                            </div>
-                        </div>
-
-                        <div class="plan featured">
-                            <header>
-                                <h4 class="plan-title">
-
-                                    RIPPLE GATEWAY
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$4999</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Stands as an alternative to BTC</li>
-                                <li><i class="ion-checkmark"> </i>Full XRP gateway setup</li>
-                                <li><i class="ion-checkmark"> </i>You can allow your users to deposit and withdraw any
-                                    amount of XRP</li>
-                                <li><i class="ion-checkmark"> </i>Take the full control over the fee</li>
-                                <li><i class="ion-checkmark"> </i>Further
-                                    support available</li>
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c8eccf3cec57722c26e9794">Select Plan</a>
-                            </div>
-                        </div>
-                        <div class="plan">
-                            <header>
-                                <h4 class="plan-title">
-
-                                    EOS GATEWAY
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$4999</span><span
-                                        class="plan-type"></span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Take complete control over fees and the code itself
-                                </li>
-                                <li><i class="ion-checkmark"> </i>We provide the full support & the setup</li>
-                                <li><i class="ion-checkmark"> </i>Get the whole payment service over your own control
-                                </li>
-                                <li><i class="ion-checkmark"> </i>Full EOS gateway setup with all of the necessary fixes
-                                    to any deployment problems and integration with your apps</li>
-
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c8eca4acec57722c26e9793">Select Plan</a>
-                            </div>
-                        </div>
-
-
-                    </div> <!-- /.container -->
-
-                    <br>
-                    <br>
-
-                    <div style="margin: 0 auto;" class="snip1404">
-                        <div class="plan">
-                            <header>
-                                <h4 class="plan-title">
-                                    LTC GATEWAY
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$4999</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Take control all over the gateway</li>
-                                <li><i class="ion-checkmark"> </i>LTC is a cryptocurrency widely used among crypto
-                                    traders</li>
-                                <li><i class="ion-checkmark"> </i>Full LTC gateway setup</li>
-                                <li><i class="ion-checkmark"> </i>Further support</li>
-
-
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c8ec670cec57722c26e9792">Select Plan</a>
-                            </div>
-                        </div>
-
-                        <div class="plan featured">
-                            <header>
-                                <h4 class="plan-title">
-
-                                    BITCOIN GATEWAY
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$4999</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>You get the full source code & adjust the fees
-                                </li>
-                                <li><i class="ion-checkmark"> </i>The basic fee is 0%</li>
-                                <li><i class="ion-checkmark"> </i>Set your own fee and earn profits</li>
-                                <li><i class="ion-checkmark"> </i>Full BTC gateway setup</li>
-                                <li><i class="ion-checkmark"> </i>Our team can set up everything just for you </li>
-
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c8ab219ad7efbd6d406ed72">Select Plan</a>
-                            </div>
-                        </div>
-                        <div class="plan">
-                            <header>
-                                <h4 class="plan-title">
-
-                                    DECENTRALIZED EXCHANGE
-                                </h4>
-                                <div class="plan-cost"><span class="plan-price">$19000</span>
-                                </div>
-                            </header>
-                            <ul class="plan-features">
-                                <li><i class="ion-checkmark"> </i>Allows to perform the trades based on the blockchain
-                                    network of your own nodes</li>
-                                <li><i class="ion-checkmark"> </i>Delegated proof of stake blockchain</li>
-                                <li><i class="ion-checkmark"> </i>Own crypto coin</li>
-                                <li><i class="ion-checkmark"> </i>Setup of several blockchain nodes with full source
-                                    code
-                                    and further support</li>
-
-                            </ul>
-                            <div class="plan-select"><a
-                                    href="https://lampgram.com/store/product/5c5a0d8729495b4e3f44c547">Select Plan</a>
-                            </div>
-                        </div>
-
-
-                    </div> <!-- /.container -->
-
                     <!--
 				=====================================================
 					Footer 
@@ -627,7 +468,7 @@
                                                         href="https://t.me/lampgram_chat"
                                                         target="_blank">Contributor</a></li>
                                                 <li><a id="become-member2" title="Become a full member"
-                                                        href="/exchange.html" target="_blank">Union
+                                                        href="https://lampgram.com/store/signup" target="_blank">Union
                                                         Member</a></li>
 
                                             </ul>
