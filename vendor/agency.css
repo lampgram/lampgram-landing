@@ -39,6 +39,12 @@ h5 {
   }
 }
 
+@media (max-width: 768px) {
+#btn-black {
+  margin: 5px;
+}
+}
+
 img::-moz-selection {
   background: transparent;
 }
@@ -102,6 +108,7 @@ header.masthead .intro-text .intro-heading {
     padding-top: 300px;
     padding-bottom: 200px;
   }
+
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
