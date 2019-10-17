@@ -190,78 +190,75 @@
     getLanguage();
     $(`#${localStorage.getItem('language')}`).attr("selected", true);
 
-    // fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTSBTC', { 'Access-Control-Allow-Origin': '*' })
-    //  .then(data => (data.json()))
-    //   .then(res => {
-    //     $('.ex-rate').html(`${res.priceChangePercent}%`);
-
-    //     if (res.priceChangePercent >= 0) {
-    //       $('.ex-icon').addClass('range-up');
-    //       $('.arrow-ex-icon').addClass('flaticon-up-caret');
-    //     }
-    //     else {
-    //       $('.ex-icon').addClass('range-down');
-    //       $('.arrow-ex-icon').addClass('flaticon-down-caret');
-    //     }
-
-    //     fetch('https://api.allorigins.win/raw?url=https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT', { 'Access-Control-Allow-Origin': '*'})
-    //     .then(data => (data.json()))
-    //       .then(respon => {
-    //         let btcRate = respon.weightedAvgPrice;
-    //         $('.ex-amount').text(`$${(btcRate * res.weightedAvgPrice).toPrecision(1)}`);
-    //         $('.tr-amount').text(`$${(res.quoteVolume * btcRate).toPrecision(6)}`);
-    //         $('.amount-g').html(`$${(res.weightedAvgPrice * btcRate * 2723360000).toPrecision(9)}`);
-    //       })
-    //   });
 
 
-    // -------------------- Navigation Scroll
-    $(window).on('scroll', function () {
-      var sticky = $('.theme-main-menu'),
-        scroll = $(window).scrollTop();
-      if (scroll >= 100) sticky.addClass('fixed');
-      else sticky.removeClass('fixed');
+    // top_items = JSON.parse(top_items);
+    // console.log(top_items);
+    // let top_items_filtered = ``;
+    // top_items.forEach(item => {
+    // 	top_items_filtered = top_items_filtered + `${item.name}/$${item.price}/${item}`
+    // });
+    // console.log(top_items_filtered);
+    // top_els_div.innerHTML = top_els_div;
+  })
 
+
+  // -------------------- Navigation Scroll
+  $(window).on('scroll', function () {
+    var sticky = $('.theme-main-menu'),
+      scroll = $(window).scrollTop();
+    if (scroll >= 100) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+
+  });
+
+
+
+
+  // ------------------------- Add OnepageNav
+  if ($('body').length) {
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 54)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      }
     });
 
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
 
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+      target: '#mega-menu-holder',
+      offset: 100
+    });
+  }
 
+  // ------------------------------ Video Blog 
+  var embed = $(".embed-video");
+  if (embed.length) {
+    embed.fitVids();
+  }
 
-    // ------------------------- Add OnepageNav
-    if ($('body').length) {
-      // Smooth scrolling using jQuery easing
-      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: (target.offset().top - 54)
-            }, 1000, "easeInOutExpo");
-            return false;
-          }
-        }
-      });
-
-      // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-      });
-
-      // Activate scrollspy to add active class to navbar items on scroll
-      $('body').scrollspy({
-        target: '#mega-menu-holder',
-        offset: 100
-      });
-    }
-
-    // ------------------------------ Video Blog 
-    var embed = $(".embed-video");
-    if (embed.length) {
-      embed.fitVids();
-    }
-
-
+  fetch('https://lampgram.com/api/landing', { 'Access-Control-Allow-Origin': '*' }).then(
+    data => data.json()
+  ).then(top_items => {
+    console.log(top_items);
+    top_items.forEach((el, i) => {
+      (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + el.price}`;
+      (document.getElementById(`top-name${i + 1}`)).innerHTML = el.name;
+      (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el._id}`);
+      (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image_url);
+    });
     // ------------------------ Market Rate Slider
     var mSlider = $("#market-rate");
     if (mSlider.length) {

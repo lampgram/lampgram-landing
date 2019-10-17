@@ -695,8 +695,6 @@ ul li ul.dropdown-list:focus {
   bottom: 0;
   left:0;
 }
-.stock-market-price #market-rate .main-wrapper .range-down .rate:before {background: linear-gradient(90deg, rgb(255,116,93) 10%, rgba(255,255,255,1) 100%);}
-.stock-market-price #market-rate .main-wrapper .range-up .rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
 /*--------------------- Our Features --------------------*/
 .our-features-one {
   padding: 120px 0 155px;
