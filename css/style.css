@@ -679,7 +679,9 @@ ul li ul.dropdown-list:focus {
 }
 .stock-market-price #market-rate .main-wrapper .current-info.range-down {color: #ff4c2f;}
 .stock-market-price #market-rate .main-wrapper .current-info.range-up {color: #08dd67;}
-
+.top-items-container {
+  margin: 100px auto -100px auto;
+}
 .stock-market-price #market-rate .main-wrapper .icon {font-size: 8px;}
 .stock-market-price #market-rate .main-wrapper .rate {
   display: block;
