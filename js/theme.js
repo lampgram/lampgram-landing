@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-
   var language;
 
   function getLanguage() {
@@ -248,17 +247,17 @@
   if (embed.length) {
     embed.fitVids();
   }
-
   fetch('https://lampgram.com/api/landing', { 'Access-Control-Allow-Origin': '*' }).then(
     data => data.json()
   ).then(top_items => {
-    console.log(top_items);
-    top_items.forEach((el, i) => {
-      (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + el.price}`;
-      (document.getElementById(`top-name${i + 1}`)).innerHTML = el.name;
-      (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el._id}`);
-      (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image_url);
-    })});
+    if (document.getElementById('top-price1'))
+      top_items.forEach((el, i) => {
+        (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + el.price}`;
+        (document.getElementById(`top-name${i + 1}`)).innerHTML = el.name;
+        (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el._id}`);
+        (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image_url);
+      })
+
     // ------------------------ Market Rate Slider
     var mSlider = $("#market-rate");
     if (mSlider.length) {
@@ -288,305 +287,243 @@
         },
       })
     }
+  });
 
 
-
-    // ------------------------------- Testimonial Slider
-    var tSlider = $(".testimonial-slider");
-    if (tSlider.length) {
-      tSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        margin: 30,
-        autoplayTimeout: 4000,
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          500: {
-            items: 1
-          },
-          992: {
-            items: 2
-          }
+  // ------------------------------- Testimonial Slider
+  var tSlider = $(".testimonial-slider");
+  if (tSlider.length) {
+    tSlider.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      margin: 30,
+      autoplayTimeout: 4000,
+      smartSpeed: 1200,
+      autoplayHoverPause: true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
         },
-      })
-    }
-
-
-    // ------------------------------- Testimonial Slider
-    var tSlider = $(".testimonial-slider-two");
-    if (tSlider.length) {
-      tSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        margin: 30,
-        autoplayTimeout: 4000,
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          992: {
-            items: 2
-          },
-          1530: {
-            items: 3
-          }
+        500: {
+          items: 1
         },
-      })
-    }
-
-
-    // ------------------------------- Partner Slider
-    var pSlider = $(".partner-slider");
-    if (pSlider.length) {
-      pSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 4
-          },
-          1200: {
-            items: 5
-          }
-        },
-      })
-    }
-
-
-    // ------------------------------- Work Progress Slider
-    var pSlider = $(".progress-slider");
-    if (pSlider.length) {
-      pSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        margin: 30,
-        autoplayTimeout: 4000,
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          576: {
-            items: 2
-          },
-          1550: {
-            items: 3
-          }
-        },
-      })
-    }
-
-
-    // ------------------------- Road Map
-    var timeline = $('#timeline-frame');
-    if (timeline.length) {
-
-      var events = [
-        {
-          date: 'Dec 28, 2018',
-          content: '<p>Development <br> Started</p>'
-        },
-        {
-          date: 'June 14, 2019',
-          content: '<p>Pre-ICO Opens</p>'
-        },
-        {
-          date: 'October 24, 2019',
-          content: '<p>Private Coin <br> Round</p>'
-        },
-        {
-          date: 'November 14, 2019',
-          content: '<p>Pre-ICO <br> Closes</p>'
-        },
-        {
-          date: 'December 24, 2019',
-          content: '<p>Decentralized <br> Platform Launch</p>'
-        },
-        {
-          date: 'January 15, 2020',
-          content: '<p>App Integration <br> Process</p>'
-        },
-        {
-          date: 'Q2 - 2020',
-          content: '<p>Future significant expand stage</p>'
-        },
-        {
-          date: 'Q3 - 2020',
-          content: '<p>Future significant expand stage 2</p>'
-        },
-        {
-          date: 'Q4 - 2020',
-          content: '<p>Future significant expand stage 3</p>'
-        },
-        {
-          date: 'Q1 - 2021',
-          content: '<p>Future significant expand stage 4</p>'
-        },
-        {
-          date: 'Q2 - 2021',
-          content: '<p>Future significant expand stage 5</p>'
-        },
-        {
-          date: 'Q3 - 2021',
-          content: '<p>Future significant expand stage 6</p>'
-        },
-        {
-          date: 'Q4 - 2021',
-          content: '<p>Future significant expand stage 7</p>'
-        },
-        {
-          date: 'Q1 - 2022',
-          content: '<p>Future significant expand stage 8</p>'
-        },
-        {
-          date: 'Q2 - 2022',
-          content: '<p>Future significant expand stage 9</p>'
+        992: {
+          items: 2
         }
-      ];
-
-      timeline.roadmap(events, {
-        eventsPerSlide: 6,
-        slide: 1,
-        prevArrow: '<i style="color: white" class="fa fa-angle-left" aria-hidden="true"></i>',
-        nextArrow: '<i style="color: white" class="fa fa-angle-right" aria-hidden="true"></i>'
-      });
-    }
+      },
+    })
+  }
 
 
+  // ------------------------------- Testimonial Slider
+  var tSlider = $(".testimonial-slider-two");
+  if (tSlider.length) {
+    tSlider.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      margin: 30,
+      autoplayTimeout: 4000,
+      smartSpeed: 1200,
+      autoplayHoverPause: true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        992: {
+          items: 2
+        },
+        1530: {
+          items: 3
+        }
+      },
+    })
+  }
 
 
+  // ------------------------------- Partner Slider
+  var pSlider = $(".partner-slider");
+  if (pSlider.length) {
+    pSlider.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 1200,
+      autoplayHoverPause: true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 4
+        },
+        1200: {
+          items: 5
+        }
+      },
+    })
+  }
 
-    // -------------------- Remove Placeholder When Focus Or Click
-    $("input,textarea").each(function () {
-      $(this).data('holder', $(this).attr('placeholder'));
-      $(this).on('focusin', function () {
-        $(this).attr('placeholder', '');
-      });
-      $(this).on('focusout', function () {
-        $(this).attr('placeholder', $(this).data('holder'));
-      });
+
+  // ------------------------------- Work Progress Slider
+  var pSlider = $(".progress-slider");
+  if (pSlider.length) {
+    pSlider.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      margin: 30,
+      autoplayTimeout: 4000,
+      smartSpeed: 1200,
+      autoplayHoverPause: true,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 2
+        },
+        1550: {
+          items: 3
+        }
+      },
+    })
+  }
+
+
+  // ------------------------- Road Map
+  var timeline = $('#timeline-frame');
+  if (timeline.length) {
+
+    var events = [];
+
+    timeline.roadmap(events, {
+      eventsPerSlide: 6,
+      slide: 1,
+      prevArrow: '<i style="color: white" class="fa fa-angle-left" aria-hidden="true"></i>',
+      nextArrow: '<i style="color: white" class="fa fa-angle-right" aria-hidden="true"></i>'
     });
+  }
 
 
-    // ----------------------------- Counter Function
-    var timer = $('.timer');
-    if (timer.length) {
-      timer.appear(function () {
-        timer.countTo();
-      });
-    }
-
-    // ------------------------------------- Fancybox
-    var fancy = $(".fancybox");
-    if (fancy.length) {
-      fancy.fancybox({
-        arrows: true,
-        animationEffect: "zoom-in-out",
-        transitionEffect: "zoom-in-out",
-      });
-    }
 
 
-    // ------------------------------ Language Switcher
-    var plang = $('#polyglotLanguageSwitcher');
-    if (plang.length) {
-      plang.polyglotLanguageSwitcher({
-        effect: 'fade',
-        testMode: true,
-        onChange: function (evt) {
-          console.log("The selected language is: " + evt.selectedItem);
-          setLanguage(evt.selectedItem);
-          getLanguage();
-        }
-      });
-    };
+
+  // -------------------- Remove Placeholder When Focus Or Click
+  $("input,textarea").each(function () {
+    $(this).data('holder', $(this).attr('placeholder'));
+    $(this).on('focusin', function () {
+      $(this).attr('placeholder', '');
+    });
+    $(this).on('focusout', function () {
+      $(this).attr('placeholder', $(this).data('holder'));
+    });
+  });
 
 
-    // ---------------------------------- Validation Alert
-    var closeButton = $(".closeAlert");
-    if (closeButton.length) {
-      closeButton.on('click', function () {
-        $(".alert-wrapper").fadeOut();
-      });
-      closeButton.on('click', function () {
-        $(".alert-wrapper").fadeOut();
-      })
-    };
+  // ----------------------------- Counter Function
+  var timer = $('.timer');
+  if (timer.length) {
+    timer.appear(function () {
+      timer.countTo();
+    });
+  }
+
+  // ------------------------------------- Fancybox
+  var fancy = $(".fancybox");
+  if (fancy.length) {
+    fancy.fancybox({
+      arrows: true,
+      animationEffect: "zoom-in-out",
+      transitionEffect: "zoom-in-out",
+    });
+  }
 
 
-    // ------------------------------- Related Blog Slider
-    var tSlider = $(".related-blog-slider");
-    if (tSlider.length) {
-      tSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        smartSpeed: 1100,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          500: {
-            items: 2
-          },
-          992: {
-            items: 3
-          }
+  // ------------------------------ Language Switcher
+  var plang = $('#polyglotLanguageSwitcher');
+  if (plang.length) {
+    plang.polyglotLanguageSwitcher({
+      effect: 'fade',
+      testMode: true,
+      onChange: function (evt) {
+        console.log("The selected language is: " + evt.selectedItem);
+        setLanguage(evt.selectedItem);
+        getLanguage();
+      }
+    });
+  };
+
+
+  // ---------------------------------- Validation Alert
+  var closeButton = $(".closeAlert");
+  if (closeButton.length) {
+    closeButton.on('click', function () {
+      $(".alert-wrapper").fadeOut();
+    });
+    closeButton.on('click', function () {
+      $(".alert-wrapper").fadeOut();
+    })
+  };
+
+
+  // ------------------------------- Related Blog Slider
+  var tSlider = $(".related-blog-slider");
+  if (tSlider.length) {
+    tSlider.owlCarousel({
+      loop: true,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      smartSpeed: 1100,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 1
         },
-      })
-    };
-
-
-    // -------------------------------- Accordion Panel
-    if ($('.theme-accordion > .panel').length) {
-      $('.theme-accordion > .panel').on('show.bs.collapse', function (e) {
-        var heading = $(this).find('.panel-heading');
-        heading.addClass("active-panel");
-
-      });
-      $('.theme-accordion > .panel').on('hidden.bs.collapse', function (e) {
-        var heading = $(this).find('.panel-heading');
-        heading.removeClass("active-panel");
-        //setProgressBar(heading.get(0).id);
-      });
-      $('.panel-heading a').on('click', function (e) {
-        if ($(this).parents('.panel').children('.panel-collapse').hasClass('in')) {
-          e.stopPropagation();
+        500: {
+          items: 2
+        },
+        992: {
+          items: 3
         }
-      });
-    };
+      },
+    })
+  };
+
+  // -------------------------------- Accordion Panel
+  if ($('.theme-accordion > .panel').length) {
+    $('.theme-accordion > .panel').on('show.bs.collapse', function (e) {
+      var heading = $(this).find('.panel-heading');
+      heading.addClass("active-panel");
+
+    });
+    $('.theme-accordion > .panel').on('hidden.bs.collapse', function (e) {
+      var heading = $(this).find('.panel-heading');
+      heading.removeClass("active-panel");
+      //setProgressBar(heading.get(0).id);
+    });
+    $('.panel-heading a').on('click', function (e) {
+      if ($(this).parents('.panel').children('.panel-collapse').hasClass('in')) {
+        e.stopPropagation();
+      }
+    });
+  };
 
   $(window).on('load', function () { // makes sure the whole site is loaded
 
