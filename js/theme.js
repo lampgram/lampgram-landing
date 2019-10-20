@@ -258,7 +258,7 @@
       (document.getElementById(`top-name${i + 1}`)).innerHTML = el.name;
       (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el._id}`);
       (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image_url);
-    });
+    })});
     // ------------------------ Market Rate Slider
     var mSlider = $("#market-rate");
     if (mSlider.length) {
@@ -587,7 +587,6 @@
         }
       });
     };
-  });
 
   $(window).on('load', function () { // makes sure the whole site is loaded
 
