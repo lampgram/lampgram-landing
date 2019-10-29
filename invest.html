@@ -90,39 +90,38 @@
 
 							<!-- Navigation -->
 							<nav class="navbar navbar-expand-lg" id="mega-menu-holder">
-									<div class="container">
-										<button class="navbar-toggler" type="button" data-toggle="collapse"
-											data-target="#navbarResponsive" aria-controls="navbarResponsive"
-											aria-expanded="false" aria-label="Toggle navigation">
-											<i class="fa fa-bars" aria-hidden="true"></i>
-										</button>
-										<div class="collapse navbar-collapse" id="navbarResponsive">
-											<ul class="navbar-nav">
-												<li class="nav-item">
-													<a class="nav-link" id="store-text"
-														href="https://lampgram.com/store/">Store</a>
-												</li>
-												<li class="nav-item">
-													<a id="invest-text" class="nav-link js-scroll-trigger"
-														href="/invest.html" title="Invest Tab">Invest</a>
-												</li>
-												<li class="nav-item">
-													<a id="list-text" class="nav-link"
-														href="/Lampgram_Litepaper.pdf">Litepaper</a>
-												</li>
-												<li class="nav-item">
-														<a id="exchange-text" class="nav-link js-scroll-trigger"
-															href="/pricing.html"
-															title="Exchange Tab">Pricing</a>
-													</li>
-												<li class="nav-item">
-													<a id="about-text" class="nav-link js-scroll-trigger" href="/about.html"
-														title="About Us Tab">About</a>
-												</li>
-											</ul>
-										</div>
+								<div class="container">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarResponsive" aria-controls="navbarResponsive"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarResponsive">
+										<ul class="navbar-nav">
+											<li class="nav-item">
+												<a class="nav-link" id="store-text"
+													href="https://lampgram.com/store/">Store</a>
+											</li>
+											<li class="nav-item">
+												<a id="invest-text" class="nav-link js-scroll-trigger"
+													href="/invest.html" title="Invest Tab">Invest</a>
+											</li>
+											<li class="nav-item">
+												<a id="list-text" class="nav-link"
+													href="/Lampgram_Litepaper.pdf">Litepaper</a>
+											</li>
+											<li class="nav-item">
+												<a id="exchange-text" class="nav-link js-scroll-trigger"
+													href="/pricing.html" title="Exchange Tab">Pricing</a>
+											</li>
+											<li class="nav-item">
+												<a id="about-text" class="nav-link js-scroll-trigger" href="/about.html"
+													title="About Us Tab">About</a>
+											</li>
+										</ul>
 									</div>
-								</nav>
+								</div>
+							</nav>
 						</div> <!-- /.menu-wrapper -->
 					</div> <!-- /.container -->
 				</header> <!-- /.theme-main-menu -->
@@ -142,9 +141,11 @@
 							<ul class="button-group clearfix">
 								<li><a href="/Lampgram_Litepaper.pdf" title="Explore Lampgram Store"
 										id="list-text">Litepaper</a></li>
-								<li><a href="/about.html" title="Explore Lampgram Store" id="team-text">About</a>
+								<li><a href="https://etherscan.io/token/0x3942B4DaB270b85F20C7d40178862cB7B877EDC8"
+										title="Explore Lampgram Store" id="team-text">About</a>
 								</li>
 							</ul>
+
 						</div>
 					</div>
 				</div> <!-- /.theme-banner-one -->
@@ -155,37 +156,49 @@
 				<img src="images/shape/30.png" alt="Email Us | Reach Us at Telegram" class="shape-two">
 				<div class="container">
 					<div class="theme-title text-center">
-						<h2 id="purchase-coins">Purchase Lampgram Cash</h2>
-						<p id="certificate-desc">After the purchase you will get the appropriate certificate on your
-							email. The record of your purchase is permanently stored in our blockchain database</p>
+						<h2 id="purchase-coins">Purchase <a
+								href="https://etherscan.io/token/0x3942B4DaB270b85F20C7d40178862cB7B877EDC8">Lampgram
+								ERC-20 Token</a></h2>
+						<p id="certificate-desc">You will be taken to a checkout form where you can complete the order
+							using Crypto or PayPal via Coinpayments</p>
 					</div>
-					<form id="contactf" class="form-validation" autocomplete="off">
+					<form id="contactf" class="form-validation" autocomplete="off"
+						action="https://www.coinpayments.net/index.php" method="post">
 						<div class="row">
 							<div class="col-md-6">
 								<label id="currency-text">Currency</label>
-								<input id="first_name" required type="text" disabled value="Lampgram Cash (LAM)"
-									name="firstName">
+								<input id="first_name" required type="text" disabled value="Lampgram ERC-20 (LAM)"
+									>
 							</div>
 							<div class="col-md-6">
 								<label id="price-text">Price</label>
 								<input id="last_name" required type="text" disabled value="$0.002" name="lastName">
 							</div>
-							<div class="col-md-6">
-								<label id="email-text">Email</label>
-								<input id="email_form" required type="email" placeholder="Email Address" name="email">
+							<div class="col-md-12">
+								<label id="amount-text">Amount of Purchase in USD</label>
+								<input id="total_amount" name="amountf" required type="number" value=1000>
+								<div style="margin-top:-20px; margin-bottom:20px">* Note, you will get N tokens, N = (amountUSD / priceLAM)</div>
 							</div>
-							<div class="col-md-6">
-								<label id="fullname-text">Full Name (as on your Personal ID / Passport)</label>
-								<input id="website_form" required type="text" placeholder="Donald John Trump"
-									name="website">
-							</div>
-
-							<span class="msg-error error"></span>
-							<div id="captcha_place" data-size="compact"></div>
 						</div>
-						<button id="send-btn">Send
-							Request</button>
+
+
+						<input type="hidden" name="cmd" value="_pay_simple">
+						<input type="hidden" name="item_name" value="Lampgram ERC-20 (LAM)">
+						<input type="hidden" name="reset" value="1">
+						<input type="hidden" name="merchant" value="f5c91579d80dd1c52ed36cabd00e4146">
+						<input type="hidden" name="item_desc" value="Invest in the future - the future of free enterprise">
+						<input type="hidden" name="item_number" value="item-number1coint">
+						<input type="hidden" name="invoice" value="invoice-number1coint">
+						<input type="hidden" name="currency" value="USD">
+						<input type="hidden" name="want_shipping" value="0">
+						<input type="hidden" name="success_url" value="https://lampgram.com">
+						<input type="hidden" name="cancel_url" value="https://lampgram.com/invest">
+						<button
+							title="You will be taken to a checkout form where you can checkout the order using Crypto or PayPal via Coinpayments"
+							class="nav-link">Purchase Now</button>
+
 					</form>
+
 					<!--Contact Form Validation Markup -->
 					<!-- Contact alert -->
 					<div class="alert-wrapper" id="alert-success">
@@ -213,30 +226,30 @@
 					Partner Slider
 				=====================================================
 				-->
-				<div class="partner-section">
-					<div class="container">
-						<div class="partner-slider">
-	
-							<div class="item"><a href="https://envato.com/blog/category/trends/" title="Envato Partner"><img
-										style="width:200px;" src="images/logo/p-4.png" alt="Envato"></a>
-							</div>
-							<div class="item"><a href="https://www.binance.com/en/register?ref=WZ8Q9NFA" title="Binance Labs Partner"><img
-										style="width:200px;" src="images/logo/p-1.png" alt="Binance"></a>
-							</div>
-							<div class="item"><a href="https://bitfinex.com/?refcode=0yujvAn2" title="Bitfinex Partner"><img
-										style="width:200px;" src="images/logo/p-7.png" alt="Bitfinex"></a>
-							</div>
-							<div class="item"><a href="https://www.templatemonster.com/?aff=lampgram"
-									title="Template Monster Partner"><img style="width:200px;" src="images/logo/p-2.png"
-										alt="Template Monster"></a>
-							</div>
-							<div class="item"><a href="https://amzn.to/36g63Yv"
-									title="Amazon Web Services Partner"><img style="width:200px;" src="images/logo/p-3.png"
-										alt="Amazon Web Services"></a>
-							</div>
+			<div class="partner-section">
+				<div class="container">
+					<div class="partner-slider">
+
+						<div class="item"><a href="https://envato.com/blog/category/trends/" title="Envato Partner"><img
+									style="width:200px;" src="images/logo/p-4.png" alt="Envato"></a>
+						</div>
+						<div class="item"><a href="https://www.binance.com/en/register?ref=WZ8Q9NFA"
+								title="Binance Labs Partner"><img style="width:200px;" src="images/logo/p-1.png"
+									alt="Binance"></a>
+						</div>
+						<div class="item"><a href="https://bitfinex.com/?refcode=0yujvAn2" title="Bitfinex Partner"><img
+									style="width:200px;" src="images/logo/p-7.png" alt="Bitfinex"></a>
+						</div>
+						<div class="item"><a href="https://www.templatemonster.com/?aff=lampgram"
+								title="Template Monster Partner"><img style="width:200px;" src="images/logo/p-2.png"
+									alt="Template Monster"></a>
+						</div>
+						<div class="item"><a href="https://amzn.to/36g63Yv" title="Amazon Web Services Partner"><img
+									style="width:200px;" src="images/logo/p-3.png" alt="Amazon Web Services"></a>
 						</div>
 					</div>
 				</div>
+			</div>
 
 			<!--
 				=====================================================
@@ -280,8 +293,8 @@
 									<ul>
 										<li><a id="become-member1" title="Become a GitHub contributor"
 												href="https://t.me/lampgram_chat" target="_blank">Contributor</a></li>
-										<li><a id="become-member2" title="Become a full member" href="https://lampgram.com/store/signup"
-												target="_blank">Union
+										<li><a id="become-member2" title="Become a full member"
+												href="https://lampgram.com/store/signup" target="_blank">Union
 												Member</a></li>
 
 									</ul>
@@ -388,68 +401,6 @@
 			var rellax = new Rellax('.rellax');</script>
 		<!-- Theme js -->
 		<script src="js/theme.js?v=12"></script>
-		<script>
-			function hoverApple(element) {
-				element.setAttribute('src', 'images/icon/apple-hover.svg');
-			}
-
-			function unhoverApple(element) {
-				element.setAttribute('src', 'images/icon/apple.svg');
-			}
-
-			function hoverGoogle(element) {
-				element.setAttribute('src', 'images/icon/google-hover.svg');
-			}
-
-			function unhoverGoogle(element) {
-				element.setAttribute('src', 'images/icon/google.svg');
-			}
-
-			var onloadCallback = function () {
-				grecaptcha.render('captcha_place', {
-					'sitekey': '6Lc24KEUAAAAABEezE9m0tI_vVBQ0hOZ1zzmiMUr',
-					'callback': onSubmit
-				});
-			};
-
-			var onSubmit = function (coin) {
-				console.log('success!');
-			};
-
-			$("#contactf").submit(function (e) {
-				e.preventDefault();
-				var $captcha = $('#captcha_place'),
-					response = grecaptcha.getResponse();
-				if (response.length === 0) {
-					if (!$captcha.hasClass("error")) {
-						$captcha.addClass("error");
-					}
-				} else {
-					$captcha.removeClass("error");
-					const url = `New coin buy request! ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the email is ${document.getElementById('email_form').value}, the full name is ${document.getElementById('website_form').value}`;
-					fetch('https://lampgram.com/api/telegram/landing', {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/x-www-form-urlencoded'
-						},
-						body: url
-					}).then(
-						response => response.text()
-					).then(
-						html => {
-							swal("Submitted!", "Our Telegram bot is taking care of delivering your message to one of our eagle managers!", "success");
-							let fields = ['email_form', 'website_form'];
-							let i = 0;
-							for (i; i < 2; i++) {
-								document.getElementById(fields[i]).value = '';
-							}
-						}
-					);
-				}
-			});
-		</script>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async
-			defer></script>
 	</div> <!-- /.main-page-wrapper -->
 </body>
 
