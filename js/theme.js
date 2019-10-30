@@ -4,19 +4,10 @@
 
   function getLanguage() {
     let lang = localStorage.getItem('language');
-    if (lang == 'ru') {
-      $('a.nav-link').css('font-size', '17.5px');
-      // $('a.nav-link').css('margin-top', '3px');
-      $('a.nav-link').css('margin', '3px 8px 0px 8px');
-      $('h1').css('font-family', 'Arial');
-      $('h1').css('font-size', '40.5px');
-      $('h2').css('font-size', '37.5px');
-      $('#first_h').css('background-color', '#FFFF00');
-    }
-    else {
-      $('h1').css('font-family', 'brandon_grotesquebold');
-      $('a.nav-link').css('font-size', '20px');
-    }
+
+    $('h1').css('font-family', 'brandon_grotesquebold');
+    $('a.nav-link').css('font-size', '20px');
+
 
     (lang == null) ? setLanguage('en') : false;
     $.ajax({
@@ -275,9 +266,9 @@
           value="https://lampgram.com">
         <button type="submit" class="common-btn">Checkout Now</button>
       </form>`
-      else {
-        (document.getElementById(`title${i + 1}`)).innerHTML = `<a href="${el.downloadLink}"><button  type="submit" class="common-btn">Download Now</button></a>`
-      }
+        else {
+          (document.getElementById(`title${i + 1}`)).innerHTML = `<a href="${el.downloadLink}"><button  type="submit" class="common-btn">Download Now</button></a>`
+        }
 
       })
 
