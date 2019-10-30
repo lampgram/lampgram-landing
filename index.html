@@ -289,7 +289,7 @@
 							<img style="width:480px;margin-left:-65px" src="images/home/x.png"
 								alt="Android | Google Play Market app" class="s8-mockup" data-aos="fade-down"
 								data-aos-duration="2500">
-							<img style="width:820px;margin-left:-270px;z-index:0" src="images/home/s8.png"
+							<img style="width:410px;margin-bottom:30px;z-index:0" src="images/home/s8.png"
 								alt="Native application | Cross platform" class="x-mockup" data-aos="fade-up"
 								data-aos-duration="2500">
 							<div class="row">
@@ -352,46 +352,55 @@
 					<!-- Captions are optional -->
 				</video>
 			</div>
+
 			<div class="contact-us-one bg-color m0" id="contact">
 				<img src="images/shape/26.png" alt="Get in Touch" class="shape">
 				<img src="images/shape/30.png" alt="Email Us | Reach Us at Telegram" class="shape-two">
 				<div class="container">
 					<div class="theme-title text-center">
-						<h2 id="get-in-touch">Get In Touch</h2>
-						<p id="get-in-touch-desc">Are you interested in collaboration? Do you belong to press? Or do you
-							want
-							to clarify something? </p>
+						<h2 id="purchase-coins">Purchase <a
+								href="https://etherscan.io/token/0x3942B4DaB270b85F20C7d40178862cB7B877EDC8">Lampgram
+								ERC-20 Token</a></h2>
+						<p id="certificate-desc">You will be taken to a checkout form where you can complete the order
+							using Crypto or PayPal via Coinpayments</p>
 					</div>
-					<form id="contactf" class="form-validation" autocomplete="off">
+					<form id="contactf" class="form-validation" autocomplete="off"
+						action="https://www.coinpayments.net/index.php" method="post">
 						<div class="row">
 							<div class="col-md-6">
-								<label id="first-name">First Name*</label>
-								<input id="first_name" required type="text" placeholder="First Name" name="firstName">
+								<label id="currency-text">Currency</label>
+								<input id="first_name" required type="text" disabled value="Lampgram ERC-20 (LAM)"
+									>
 							</div>
 							<div class="col-md-6">
-								<label id="last-name">Last Name*</label>
-								<input id="last_name" required type="text" placeholder="Last Name" name="lastName">
+								<label id="price-text">Price</label>
+								<input id="last_name" required type="text" disabled value="$0.002" name="lastName">
 							</div>
-							<div class="col-md-6">
-								<label id="contact-email">Email*</label>
-								<input id="email_form" required type="email" placeholder="Email Address" name="email">
+							<div class="col-md-12">
+								<label id="amount-text">Amount of Purchase in USD</label>
+								<input id="total_amount" name="amountf" required type="number" value=3>
+								<div style="margin-top:-20px; margin-bottom:20px">* Note, you will get N tokens, N = (amountUSD / priceLAM)</div>
 							</div>
-							<div class="col-md-6">
-								<label id="contact-website">Website</label>
-								<input id="website_form" type="text" placeholder="Your website, if any..."
-									name="website">
-							</div>
-							<div class="col-12">
-								<label id="contact-topic">I would like to discuss*</label>
-								<input id="website_topic" required placeholder="Selling my project on Lampgram..."
-									type="text" name="message">
-							</div>
-							<span class="msg-error error"></span>
-							<div id="captcha_place" data-size="compact"></div>
 						</div>
-						<button id="contact-button">Send
-							Message</button>
+
+
+						<input type="hidden" name="cmd" value="_pay_simple">
+						<input type="hidden" name="item_name" value="Lampgram ERC-20 (LAM)">
+						<input type="hidden" name="reset" value="1">
+						<input type="hidden" name="merchant" value="f5c91579d80dd1c52ed36cabd00e4146">
+						<input type="hidden" name="item_desc" value="Invest in the future - the future of free enterprise">
+						<input type="hidden" name="item_number" value="item-number1coint">
+						<input type="hidden" name="invoice" value="invoice-number1coint">
+						<input type="hidden" name="currency" value="USD">
+						<input type="hidden" name="want_shipping" value="0">
+						<input type="hidden" name="success_url" value="https://lampgram.com">
+						<input type="hidden" name="cancel_url" value="https://lampgram.com/invest">
+						<button
+							title="You will be taken to a checkout form where you can checkout the order using Crypto or PayPal via Coinpayments"
+							class="nav-link">Purchase Now</button>
+
 					</form>
+
 					<!--Contact Form Validation Markup -->
 					<!-- Contact alert -->
 					<div class="alert-wrapper" id="alert-success">
@@ -413,36 +422,36 @@
 				</div>
 			</div> <!-- /.contact-us-one -->
 
+
 			<!--
 				=====================================================
 					Partner Slider
 				=====================================================
 				-->
-			<div class="partner-section">
-				<div class="container">
-					<div class="partner-slider">
-
-						<div class="item"><a href="https://envato.com/blog/category/trends/" title="Envato Partner"><img
-									style="width:200px;" src="images/logo/p-4.png" alt="Envato"></a>
-						</div>
-						<div class="item"><a href="https://www.binance.com/en/register?ref=WZ8Q9NFA" title="Binance Labs Partner"><img
-									style="width:200px;" src="images/logo/p-1.png" alt="Binance"></a>
-						</div>
-						<div class="item"><a href="https://bitfinex.com/?refcode=0yujvAn2" title="Bitfinex Partner"><img
-									style="width:200px;" src="images/logo/p-7.png" alt="Bitfinex"></a>
-						</div>
-						<div class="item"><a href="https://www.templatemonster.com/?aff=lampgram"
-								title="Template Monster Partner"><img style="width:200px;" src="images/logo/p-2.png"
-									alt="Template Monster"></a>
-						</div>
-						<div class="item"><a href="https://amzn.to/36g63Yv"
-								title="Amazon Web Services Partner"><img style="width:200px;" src="images/logo/p-3.png"
-									alt="Amazon Web Services"></a>
+				<div class="partner-section">
+					<div class="container">
+						<div class="partner-slider">
+	
+							<div class="item"><a href="https://envato.com/blog/category/trends/" title="Envato Partner"><img style="width:200px; margin-top:50px"
+										 src="images/logo/p-4.png" alt="Envato"></a>
+							</div>
+							<div class="item"><a href="https://www.binance.com/en/register?ref=WZ8Q9NFA" title="Binance Labs Partner"><img
+								style="width:200px; margin-top:26px" src="images/logo/p-1.png" alt="Binance"></a>
+							</div>
+							<div class="item"><a href="https://bitfinex.com/?refcode=0yujvAn2" title="Bitfinex Partner"><img style="width:200px; margin-top:52px"
+										 src="images/logo/p-7.png" alt="Bitfinex"></a>
+							</div>
+							<div class="item"><a href="https://www.templatemonster.com/?aff=lampgram"
+									title="Template Monster Partner"><img style="height:130px;" src="images/logo/p-2.png"
+										alt="Template Monster"></a>
+							</div>
+							<div class="item"><a href="https://amzn.to/36g63Yv"
+									title="Amazon Web Services Partner"><img style="width:200px;" src="images/logo/p-3.png"
+										alt="Amazon Web Services"></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
 
 			<!--
 				=====================================================
@@ -459,8 +468,6 @@
 									<h4 class="title">Lampgram</h4>
 									<a href="mailto:invest@lampgram.com?subject=Investing in Lampgram.com&body=Hello!"
 										target="_top" title="Invest in Lampgram" class="email">invest@lampgram.com</a>
-									<div id="btc-donation" class="mobile">BTC donations address:
-										38t7nHr9MfoA3gZWSb4wtEYSDaA9wAyEz9</div>
 								</div> <!-- /.footer-logo -->
 								<div class="col-lg-2 col-sm-6 footer-list">
 									<h4 id="quick-links" class="title">Quick Links</h4>
@@ -614,51 +621,7 @@
 				element.setAttribute('src', 'images/icon/google.svg');
 			}
 
-			var onloadCallback = function () {
-				grecaptcha.render('captcha_place', {
-					'sitekey': '6Lc24KEUAAAAABEezE9m0tI_vVBQ0hOZ1zzmiMUr',
-					'callback': onSubmit
-				});
-			};
-
-			var onSubmit = function (coin) {
-				console.log('success!');
-			};
-
-			$("#contactf").submit(function (e) {
-				e.preventDefault();
-				var $captcha = $('#captcha_place'),
-					response = grecaptcha.getResponse();
-				if (response.length === 0) {
-					if (!$captcha.hasClass("error")) {
-						$captcha.addClass("error");
-					}
-				} else {
-					$captcha.removeClass("error");
-					const url = `New quote request! My name is ${document.getElementById('first_name').value} ${document.getElementById('last_name').value}, the subject is ${document.getElementById('website_topic').value}, the email is ${document.getElementById('email_form').value}, the website is ${document.getElementById('website_form').value}`;
-					fetch('https://lampgram.com/api/telegram/landing', {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/x-www-form-urlencoded'
-						},
-						body: url
-					}).then(
-						response => response.text()
-					).then(
-						html => {
-							swal("Submitted!", "Our Telegram bot is taking care of delivering your message to one of the eagle managers!", "success");
-							let fields = ['first_name', 'last_name', 'website_topic', 'email_form', 'website_form'];
-							let i = 0;
-							for (i; i < 5; i++) {
-								document.getElementById(fields[i]).value = '';
-							}
-						}
-					);
-				}
-			});
 		</script>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async
-			defer></script>
 	</div> <!-- /.main-page-wrapper -->
 </body>
 

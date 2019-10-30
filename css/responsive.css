@@ -34,7 +34,7 @@
   .our-features-one .single-feature.border-fix:before {left: -50px;}
   .our-features-one .single-feature.border-fix:after {right: -50px;}
   .apps-overview .inner-wrapper .x-mockup {width: 40%;left: 195px;}
-  .apps-overview .inner-wrapper .s8-mockup {width: 32%;left: -70px;}
+  .apps-overview .inner-wrapper .s8-mockup {width: 32%;left: -150px;}
   .theme-counter .bg-image .theme-title p {padding-left: 90px;}
   .coin-sale-section .theme-title p,.our-road-map .theme-title p {padding: 15px 140px 0;}
   .coin-sale-section .coin-sale-text .title-wrapper {padding-right: 150px;}
@@ -44,6 +44,15 @@
   .theme-banner-three .main-text-wrapper {padding-bottom: 300px;}
 }
 /*(min-width: 992px) and (max-width: 1199px)*/
+
+@media (max-width: 1100px) {
+  .s8-mockup {
+    display: none;
+  }
+  .x-mockup {
+    left: 9%!important;
+  }
+}
 
 @media (max-width: 767px) {
   #polyglotLanguageSwitcher {margin-right: -10px;}
@@ -248,10 +257,4 @@
     left: 7%;
     padding: 30px 10px;
   } 
-}
-@media (max-width: 400px) {
-  
-}
-@media (max-width: 380px) {
-  
 }
