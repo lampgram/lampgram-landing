@@ -244,7 +244,7 @@
     if (document.getElementById('top-price1'))
       top_items.forEach((el, i) => {
         (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + Math.ceil(el.price*0.75)}`;
-        (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateTitle;
+        (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateFullTitle;
         (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el.templateId}`);
         (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image);
         if (el.price !== 'Free')
@@ -253,8 +253,8 @@
         <input type="hidden" name="reset" value="1">
         <input type="hidden" name="merchant"
           value="f5c91579d80dd1c52ed36cabd00e4146">
-        <input type="hidden" name="item_name" value="${el.templateTitle}">
-        <input type="hidden" name="item_desc" value="${el.specificTemplateNamePreview}">
+        <input type="hidden" name="item_name" value="${el.templateFullTitle}">
+        <input type="hidden" name="item_desc" value="${el.templatePreviewHtmlTitle}">
         <inpu type="hidden" name="item_number" value="item-number1">
         <input type="hidden" name="invoice" value="invoice-number1">
         <input type="hidden" name="currency" value="USD">
@@ -265,7 +265,9 @@
         <input type="hidden" name="cancel_url"
           value="https://lampgram.com">
         <button type="submit" class="common-btn">Checkout Now</button>
-      </form>`
+      </form>
+      <a href="${el.properties.livePreviewURL}"><button type="button" style="margin-top:5px;" class="common-btn">Preview</button></a>
+      `
         else {
           (document.getElementById(`title${i + 1}`)).innerHTML = `<a href="${el.downloadLink}"><button  type="submit" class="common-btn">Download Now</button></a>`
         }
