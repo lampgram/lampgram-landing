@@ -16,7 +16,7 @@
       success: function (lang) { language = lang }
     });
 
-    $('#exchange-text').html(language.exchange);
+    $('#quick-links5').html(language.exchange);
     $('#login-text').html(language.login);
     $('#store-text').html(language.store);
     $('#invest-text').html(language.invest);
