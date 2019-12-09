@@ -255,7 +255,7 @@
           value="f5c91579d80dd1c52ed36cabd00e4146">
         <input type="hidden" name="item_name" value="${el.templateFullTitle}">
         <input type="hidden" name="item_desc" value="${el.templatePreviewHtmlTitle}">
-        <inpu type="hidden" name="item_number" value="item-number1">
+        <inpu type="hidden" name="item_number" value="${el.templateId}">
         <input type="hidden" name="invoice" value="invoice-number1">
         <input type="hidden" name="currency" value="USD">
         <input type="hidden" name="amountf" value="${Math.ceil(el.price*0.95)}">
