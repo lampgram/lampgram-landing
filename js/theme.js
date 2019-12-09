@@ -233,7 +233,7 @@
     });
   }
 
-  // ------------------------------ Video Blog 
+  // ------------------------------ Video 
   var embed = $(".embed-video");
   if (embed.length) {
     embed.fitVids();
