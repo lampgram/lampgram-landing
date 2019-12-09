@@ -243,7 +243,7 @@
   ).then(top_items => {
     if (document.getElementById('top-price1'))
       top_items.forEach((el, i) => {
-        (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + Math.ceil(el.price*0.75)}`;
+        (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + Math.ceil(el.price*0.95)}`;
         (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateFullTitle;
         (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el.templateId}`);
         (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image);
@@ -258,7 +258,7 @@
         <inpu type="hidden" name="item_number" value="item-number1">
         <input type="hidden" name="invoice" value="invoice-number1">
         <input type="hidden" name="currency" value="USD">
-        <input type="hidden" name="amountf" value="${Math.ceil(el.price*0.75)}">
+        <input type="hidden" name="amountf" value="${Math.ceil(el.price*0.95)}">
         <input type="hidden" name="want_shipping" value="0">
         <input type="hidden" f="success_url"
           value="https://lampgram.com">
