@@ -244,7 +244,7 @@
       top_items.forEach((el, i) => {
         (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + Math.ceil(el.price*0.95)}`;
         (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateFullTitle;
-        (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el.templateId}`);
+        (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/product/${el.templateId}`);
         (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image);
       })
 
