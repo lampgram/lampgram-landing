@@ -247,31 +247,6 @@
         (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateFullTitle;
         (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/store/product/${el.templateId}`);
         (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image);
-        if (el.price !== 'Free')
-          (document.getElementById(`title${i + 1}`)).innerHTML = `<form action="https://www.coinpayments.net/index.php" method="post">
-        <input type="hidden" name="cmd" value="_pay_simple">
-        <input type="hidden" name="reset" value="1">
-        <input type="hidden" name="merchant"
-          value="f5c91579d80dd1c52ed36cabd00e4146">
-        <input type="hidden" name="item_name" value="${el.templateFullTitle}">
-        <input type="hidden" name="item_desc" value="${el.templatePreviewHtmlTitle}">
-        <inpu type="hidden" name="item_number" value="${el.templateId}">
-        <input type="hidden" name="invoice" value="invoice-number1">
-        <input type="hidden" name="currency" value="USD">
-        <input type="hidden" name="amountf" value="${Math.ceil(el.price*0.95)}">
-        <input type="hidden" name="want_shipping" value="0">
-        <input type="hidden" f="success_url"
-          value="https://lampgram.com">
-        <input type="hidden" name="cancel_url"
-          value="https://lampgram.com">
-        <button type="submit" class="common-btn">Checkout Now</button>
-      </form>
-      <a href="${el.properties.livePreviewURL}"><button type="button" style="margin-top:5px;" class="common-btn">Preview</button></a>
-      `
-        else {
-          (document.getElementById(`title${i + 1}`)).innerHTML = `<a href="${el.downloadLink}"><button  type="submit" class="common-btn">Download Now</button></a>`
-        }
-
       })
 
     // ------------------------ Market Rate Slider
