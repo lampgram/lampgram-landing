@@ -11,11 +11,11 @@
 
     (lang == null) ? setLanguage('en') : false;
     $.ajax({
-      url: '/language/' + localStorage.getItem('language') + '.json',
+      url: '/about/language/' + localStorage.getItem('language') + '.json',
       dataType: 'json', async: false, dataType: 'json',
       success: function (lang) { language = lang }
     });
-
+    $('#quick-links5').html(language.exchange);
     $('#login-text').html(language.login);
     $('#store-text').html(language.store);
     $('#invest-text').html(language.invest);
