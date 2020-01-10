@@ -410,13 +410,12 @@ ul li ul.dropdown-list:focus {
 }
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .download-button,
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .dropdown-menu a {
-  width: 250px;
+  width: 140px;
   line-height: 55px;
   color: #fff;
   font-size: 18px;
   border-radius: 3px;
-  text-align: left;
-  padding-left: 28px;
+  text-align: center;
 }
 .theme-banner-one .main-text-wrapper .button-group>li:last-child .dropdown-toggle {
   height: 55px;

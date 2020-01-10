@@ -11,11 +11,10 @@
 
     (lang == null) ? setLanguage('en') : false;
     $.ajax({
-      url: '/about/language/' + localStorage.getItem('language') + '.json',
+      url: '/language/' + localStorage.getItem('language') + '.json',
       dataType: 'json', async: false, dataType: 'json',
       success: function (lang) { language = lang }
     });
-    $('#quick-links5').html(language.exchange);
     $('#login-text').html(language.login);
     $('#store-text').html(language.store);
     $('#invest-text').html(language.invest);
@@ -237,48 +236,6 @@
   if (embed.length) {
     embed.fitVids();
   }
-  fetch('https://api.templatemonster.com/products/v2/products/en?range[price][gte]=1&expand=properties&sort=-downloads&per-page=4', { 'Access-Control-Allow-Origin': '*' }).then(
-    data => data.json()
-  ).then(top_items => {
-    if (document.getElementById('top-price1'))
-      top_items.forEach((el, i) => {
-        (document.getElementById(`top-price${i + 1}`)).innerHTML = `${el.price === 'Free' ? el.price : '$' + Math.ceil(el.price*0.95)}`;
-        (document.getElementById(`top-name${i + 1}`)).innerHTML = el.templateFullTitle;
-        (document.getElementById(`top-link${i + 1}`)).setAttribute('href', `https://lampgram.com/product/${el.templateId}`);
-        (document.getElementById(`top-img${i + 1}`)).setAttribute('src', el.image);
-      })
-
-    // ------------------------ Market Rate Slider
-    var mSlider = $("#market-rate");
-    if (mSlider.length) {
-      mSlider.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        margin: 30,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        lazyLoad: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          500: {
-            items: 2
-          },
-          992: {
-            items: 3
-          },
-          1300: {
-            items: 4,
-          }
-        },
-      })
-    }
-  });
-
 
   // ------------------------------- Testimonial Slider
   var tSlider = $(".testimonial-slider");
