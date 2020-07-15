@@ -1710,7 +1710,7 @@
 
                 try {
 
-                    $(this).find('iframe').hide().attr('src', '//about:blank');
+                    $(this).find('iframe').hide().attr('src', '/:blank');
 
                 } catch (ignore) {}
 
